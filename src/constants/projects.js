@@ -29,7 +29,7 @@ export const projects = [
     description:
       "This is a My second Nextjs Project for Client, to many function re-rendered is make UX Slow, so i Use Nextjs for State Management.",
     image: "/flashcashier.webp",
-    technologies: ["MongoDB", "Nextjs", "Tailwindcss"],
+    technologies: ["MySQL", "Nextjs", "Tailwindcss"],
   },
   {
     id: 5,

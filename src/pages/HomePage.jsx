@@ -7,7 +7,7 @@ import { Meteors } from "../components/magicui/meteors"
 import ActionButtons from "../components/content/Hero/ActionButton"
 import SEOHeader from "../components/SEO/SEOHeader"
 
-const description = "I create modern web applications, SEO friendly, semantic code, and responsive designs using contemporary technology. Perfectionist about clean reusable code, beautiful UI design, and awesome UX."
+const description = "I create modern web applications, SEO friendly, semantic code, and responsive designs using contemporary technology. Perfectionist about clean Reusable, Scalable, Maintainable code, beautiful Art UI design, and awesome UX Friendly with smooth interaction."
 
 const HomePage = () => {
   return (

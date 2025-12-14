@@ -1,5 +1,4 @@
 export const aboutParagraphs = [
-  `I'm Rifqi Ibrahim, a passionate fullstack developer currently studying at SMK Telekomunikasi Telesandi Bekasi. My journey in web development started with curiosity about how websites work.`,
-  `I specialize in modern web technologies like Next.js SEO performance in mind, and I'm also proficient in Nuxt.js SSR Performance and Laravel with Inertiajs.`,
-  `Outside of coding, I enjoy drawing, writing, and playing guitar. I wanna be like my idol, Synyster Gates.`,
-]
+  `I'm Rifqi Ibrahim, a passionate full-stack developer currently studying at SMK Telekomunikasi Telesandi Bekasi. My journey in web development began with a deep curiosity about how websites work. I started by exploring various web technologies and learning what tools developers use to build web applications.`,
+  `I specialize in modern web technologies such as Next.js with a strong focus on SEO and performance, as well as Laravel with Inertia.js. In reality, I have experimented with many frameworks, libraries, and ecosystems, but I chose not to dive deeply into all of them in order to stay focused on Next.js. One example is Angular, which I was advised to learn because of its well-structured and disciplined architecture. However, I found it too strict and complex, as it enforces a very rigid structure from end to end. Because of that, I decided to focus more on Next.js and Laravel, which better match my development style.`,
+];

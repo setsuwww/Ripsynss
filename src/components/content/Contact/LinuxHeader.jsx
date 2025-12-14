@@ -42,9 +42,9 @@ export default function LinuxHeader() {
   return (
     <div className="flex items-center justify-between py-2 md:py-1.5 px-4 md:px-5 border-b border-white/10 bg-white/5 rounded-t-sm">
       <div className="flex items-center space-x-1.5 md:space-x-2">
-        <button onClick={handleClose} className="w-3.5 h-3.5 rounded-full bg-red-500 hover:bg-red-700 border border-red-700/70 transition-all appearance-none p-0" title="Close?"/>
-        <span className="w-3.5 h-3.5 rounded-full bg-yellow-500 hover:bg-yellow-700 border border-yellow-700/70" />
-        <span className="w-3.5 h-3.5 rounded-full bg-green-500 hover:bg-green-700 border border-green-700/70" />
+        <button onClick={handleClose} className="w-3.5 h-3.5 rounded-full bg-gradient-to-b from-red-700 to-red-500 border border-red-700 hover:from-red-800 appearance-none p-0" title="Close?"/>
+        <span className="w-3.5 h-3.5 rounded-full bg-gradient-to-b from-yellow-700 to-yellow-500 border border-yellow-700 hover:from-yellow-800" />
+        <span className="w-3.5 h-3.5 rounded-full bg-gradient-to-b from-green-700 to-green-500 border border-green-700 hover:from-green-800" />
       </div>
       <p className="text-sm md:text-base text-gray-500">Contact-Form</p>
     </div>

@@ -1,5 +1,4 @@
 export const techColors = {
-  MongoDB: "from-green-500/10 to-green-600/10 border-green-400/20 text-green-300",
   Tailwindcss: "from-teal-500/10 to-teal-600/10 border-teal-400/20 text-teal-300",
   Nextjs: "from-gray-800/20 to-black/20 border-white/30 text-white",
   Vuejs: "from-green-500/10 to-green-600/10 border-green-400/20 text-green-300",

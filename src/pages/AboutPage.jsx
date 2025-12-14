@@ -38,7 +38,7 @@ const AboutPage = () => {
                   {experiences.map((exp, index) => (
                     <article key={index} className="border-l-2 border-yellow-400/20 pl-6 relative">
                       <div className="absolute w-3 h-3 bg-yellow-400 rounded-full -left-[0.4rem] top-[7px]" data-aos="fade-up" data-aos-duration={600 + index * 200}></div>
-                      <h3 className="tracking-wide text-sm md:text-md font-semibold bg-gradient-to-r from-orange-400 to-yellow-200 bg-clip-text text-transparent inline-block" data-aos="fade-right" data-aos-duration={700 + index * 150}>
+                      <h3 className="tracking-wide text-sm md:text-md font-semibold bg-gradient-to-r from-amber-500 to-yellow-200 bg-clip-text text-transparent inline-block" data-aos="fade-right" data-aos-duration={700 + index * 150}>
                         {exp.title}
                       </h3>
                       <p className="flex items-center space-x-2 text-violet-500 text-xs md:text-sm font-medium" data-aos="fade-right" data-aos-duration={800 + index * 100}>
