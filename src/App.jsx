@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
 import UserLayout from './Layout'
-import Intro from './components/Intro';
+import IntroWrapper from './components/Intro';
 
 const App = () => {
   return (
-    <Intro>
+    <IntroWrapper>
       <Routes>
         <Route path="/" element={<UserLayout />} />
       </Routes>
-    </Intro>
+    </IntroWrapper>
   )
 }
 export default App

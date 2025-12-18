@@ -15,9 +15,9 @@ const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
         </picture>
         <div className="p-6">
           <h3 className="text-base md:text-lg font-bold text-white mb-3">{project.title}</h3>
-          <p className="text-gray-400 mb-6 text-xs md:text-sm leading-relaxed">{project.description}</p>
+          <p className="text-slate-400 mb-6 text-xs md:text-sm leading-relaxed">{project.description}</p>
           <div className="space-y-3">
-            <h4 className="text-xs font-semibold text-gray-300 uppercase tracking-wider">Built with</h4>
+            <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider">Built with</h4>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, i) => (
                 <div key={i} className={`px-3 py-1.5 text-xs font-medium rounded-full border ${

@@ -1,14 +1,30 @@
 import React from "react"
 import { techColors } from "../../../constants/techColor"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const ProjectCard = React.memo(function ProjectCard({ project, index, onClick }) {
+  
+  const techBadges = React.useMemo(() => 
+    project.technologies.map((tech, techIndex) => (
+      <div key={techIndex} className={`...`}>
+        <span>{tech}</span>
+      </div>
+    )),
+    [project.technologies]
+  );
+
   return (
     <div className="group relative bg-white/5 backdrop-blur-xs border border-white/10 rounded-2xl overflow-hidden transition-colors"
       data-aos="zoom-in"
     >
-      <div className="relative overflow-hidden cursor-pointer" onClick={() => onClick(index)}>
-        <img src={project.image || "/placeholder.svg"} alt={project.title}
-          loading="lazy" decoding="async" className="w-full h-48 object-cover"
+      <div className="relative overflow-hidden cursor-pointer p-2 rounded-2xl" onClick={() => onClick(index)}>
+        <LazyLoadImage
+          src={project.image || "/placeholder.webp"}
+          alt={project.title}
+          effect="blur"
+          className="w-full h-48 object-cover p-2 rounded-2xl"
         />
       </div>
 
@@ -16,14 +32,14 @@ const ProjectCard = React.memo(function ProjectCard({ project, index, onClick })
         <h1 className="tracking-wide text-xl font-bold text-white mb-3 group-hover:text-violet-400 transition-colors">
           {project.title}
         </h1>
-        <p className="text-gray-400 mb-6 text-sm leading-relaxed line-clamp-3">{project.description}</p>
+        <p className="text-slate-400 mb-6 text-sm leading-relaxed line-clamp-3">{project.description}</p>
 
         <div className="space-y-3">
-          <h4 className="text-xs font-semibold text-gray-300 uppercase tracking-wider">Built with</h4>
+          <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider">Built with</h4>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, techIndex) => (
               <div key={techIndex} className={`group/badge relative overflow-hidden px-3 py-1.5 text-xs font-medium rounded-full border backdrop-blur-xs transition-all hover:scale-105
-                   ${techColors[tech] || "from-white/10 to-white/20 border-white/20 text-white"} bg-gradient-to-r cursor-pointer`}
+                ${techColors[tech] || "from-white/10 to-white/20 border-white/20 text-white"} bg-gradient-to-r cursor-pointer`}
               >
                 <span className="relative z-10">{tech}</span>
               </div>

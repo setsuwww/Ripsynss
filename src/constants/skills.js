@@ -1,5 +1,5 @@
 export const skills = [
-  { name: "Nextjs", level: 95, color: "from-white to-gray-400" },
+  { name: "Nextjs", level: 95, color: "from-white to-slate-400" },
   { name: "Reactjs", level: 95, color: "from-sky-400 to-sky-600" },
   { name: "Nuxtjs", level: 80, color: "from-emerald-400 to-emerald-600" },
   { name: "Vuejs", level: 80, color: "from-green-400 to-green-600" },

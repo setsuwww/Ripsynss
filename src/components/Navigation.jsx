@@ -47,7 +47,7 @@ const Navigation = () => {
               <a key={item.href} href={item.href} className={clsx("flex items-center tracking-wide rounded-lg transition-all duration-300",
                 activeSection === item.href.slice(1)
                   ? "text-sky-400 font-semibold bg-radial from-sky-500/15 to-transparent px-4 py-1"
-                  : "text-gray-500 hover:text-gray-300"
+                  : "text-slate-500 hover:text-slate-300"
               )}>
                 <span>{item.label}</span>
               </a>
@@ -67,7 +67,7 @@ const Navigation = () => {
         <AnimatePresence>
           {isOpen && (<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3, ease: "easeOut" }}
               className={clsx("md:hidden absolute left-0 right-0 z-50 backdrop-blur-sm border-b border-white/10 shadow-lg",
-                "bg-gradient-to-b from-zinc-950/90 via-zinc-900/90 to-zinc-800/80",
+                "bg-gradient-to-b from-slate-950/90 via-slate-900/90 to-slate-800/80",
                 scrolled ? "top-14" : "top-16"
               )}
             >

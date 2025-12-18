@@ -61,7 +61,7 @@ const ContactPage = () => {
 
         <section className="relative px-2 sm:px-6 md:px-12 lg:px-24 py-10 sm:py-12">
           <div className="grid gap-10 lg:gap-12">
-            <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+            <div className="backdrop-blur-xs bg-white/5 border border-white/10 rounded-xl overflow-hidden outline outline-offset-4 outline-slate-400/10">
 
               <LinuxHeader />
 
@@ -86,7 +86,7 @@ const ContactPage = () => {
                     <textarea id="message" name="message" required rows={6} value={formData.message} onChange={handleChange} className="input" placeholder="You're free to say whatever you..."/>
                   </div>
 
-                  <button type="submit" disabled={isSubmitting} className="group w-full outline-offset-4 outline-1 outline-slate-500/10 ring-1 ring-gray-400/20 bg-gray-600/20 hover:ring-violet-400/20 hover:bg-radial hover:from-violet-500/10 tracking-wider font-base py-4 px-6 rounded-lg transition-colors duration-200 ease-linear flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                  <button type="submit" disabled={isSubmitting} className="group w-full outline-offset-4 outline-1 outline-slate-500/10 ring-1 ring-slate-400/20 bg-slate-600/20 hover:ring-violet-400/20 hover:bg-radial hover:from-violet-500/10 tracking-wider font-base py-4 px-6 rounded-lg transition-colors duration-200 ease-linear flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed">
                     {isSubmitting ? (
                       <>
                         <div className="w-5 h-5 border-2 border-black/30 border-t-black rounded-full animate-spin" />

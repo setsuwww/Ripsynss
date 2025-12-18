@@ -13,8 +13,8 @@ export default function LinuxHeader() {
         popup: "p-0 bg-transparent shadow-none",
       },
       html: (
-        <div className="flex flex-col rounded-xl overflow-hidden bg-zinc-900 text-white shadow-2xl border border-zinc-700">
-          <div className="flex items-center space-x-2 px-4 py-3 bg-zinc-800 border-b border-zinc-700">
+        <div className="flex flex-col rounded-xl overflow-hidden bg-slate-900 text-white shadow-2xl border border-slate-700">
+          <div className="flex items-center space-x-2 px-4 py-3 bg-slate-800 border-b border-slate-700">
             <button id="mac-close" className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600"/>
             <span className="w-3 h-3 rounded-full bg-yellow-400 hover:bg-yellow-500" />
             <span className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600" />
@@ -24,7 +24,7 @@ export default function LinuxHeader() {
             <Heart className="w-8 h-8 mx-auto text-pink-400" />
             </div>
             <h2 className="text-lg font-bold mb-2">Thank you</h2>
-            <p className="text-zinc-300">
+            <p className="text-slate-300">
               Thank you for visiting my portfolio website.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function LinuxHeader() {
         <span className="w-3.5 h-3.5 rounded-full bg-gradient-to-b from-yellow-700 to-yellow-500 border border-yellow-700 hover:from-yellow-800" />
         <span className="w-3.5 h-3.5 rounded-full bg-gradient-to-b from-green-700 to-green-500 border border-green-700 hover:from-green-800" />
       </div>
-      <p className="text-sm md:text-base text-gray-500">Contact-Form</p>
+      <p className="text-sm md:text-base text-slate-500">Contact-Form</p>
     </div>
   );
 }

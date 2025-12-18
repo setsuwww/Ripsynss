@@ -7,9 +7,9 @@ function AboutSectionComponent() {
     <section className="glass-effect rounded-2xl p-6 md:p-8" data-aos="fade-left">
       <TitleForm title="Did U Know me?" />
 
-      <article className="text-gray-400 space-y-4 leading-[80px] md:leading-[26px]">
+      <article className="text-slate-400 space-y-4 leading-[80px] md:leading-[26px]">
         {aboutParagraphs.map((text, i) => (
-          <p key={i} className="text-xs sm:text-sm md:text-md lg:text-lg tracking-wide md:tracking-normal">
+          <p key={i} className="text-sm md:text-base tracking-wide md:tracking-wide">
             {text}
           </p>
         ))}

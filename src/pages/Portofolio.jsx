@@ -79,19 +79,21 @@ export default function PortfolioPage() {
         />
       </section>
 
-      <div className="relative z-10 flex flex-col items-center">
-        <div className="w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-white/20 to-transparent blur-sm mb-8" />
+      <div className="flex items-center justify-center w-full my-12 gap-4">
+        <div className="flex-1 h-px bg-gradient-to-r from-transparent via-sky-500/20 to-transparent" />
 
-        <a href="https://github.com/setsuwww" target="_blank" rel="noopener noreferrer"
-          className="group flex items-center gap-2 px-8 py-4 rounded-full backdrop-blur-xl bg-white/10 border border-white/20 shadow-lg transition-all duration-300 hover:bg-radial hover:from-white/20 hover:to-slate-500/5 hover:scale-105"
-        >
-          <Github className="w-5 h-5 text-white group-hover:scale-125 transition-transform" />
-          <span className="text-sm font-medium text-white group-hover:text-yellow-500 tracking-wide">
-            Visit My GitHub
-          </span>
-        </a>
+        <div className="group px-3 py-4 md:py-2.5 rounded-full border border-slate-500/30 md:border-slate-500/15 hover:border-slate-500/30 delay-5 transition-all md:hover:py-4 cursor-pointer hover:shadow-lg hover:shadow-slate-500/15">
+          <a href="https://github.com/setsuwww" target="_blank" rel="noopener noreferrer"
+            className="
+            group px-5 py-3 rounded-full 
+            bg-slate-500/10 border border-slate-500/35 md:border-slate-500/10 group-hover:border-slate-500/35 delay-10 transition-all
+          "
+          >
+            <span className="px-4 py-1.5 rounded-full border border-slate-500/45 md:border-slate-500/5 group-hover:border-slate-500/45 gradient-text delay-15 transition-all">View My GitHub</span>
+          </a>
+        </div>
 
-        <div className="w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-white/20 to-transparent blur-sm mt-8" />
+        <div className="flex-1 h-px bg-gradient-to-l from-transparent via-sky-500/20 to-transparent" />
       </div>
     </>
   )

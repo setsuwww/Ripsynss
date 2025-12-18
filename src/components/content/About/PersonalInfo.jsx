@@ -10,7 +10,7 @@ function InfoRow({ icon, value, color, colorHover, animation, delay }) {
       <div className={`group p-2 md:p-2 rounded-full ${color} flex-shrink-0 transition-colors`}>
         <Icon className={`w-5 h-5 md:w-7 md:h-7 ${colorHover} trasition-transform duration-100 ease-in`} />
       </div>
-      <p className="font-pixel text-gray-300 text-xs md:text-base">{value}</p>
+      <p className="font-pixel text-slate-300 text-xs md:text-base">{value}</p>
     </div>
   )
 }
