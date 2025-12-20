@@ -4,12 +4,12 @@ import { ArrowRight, Mail } from "lucide-react"
 export default function ActionButtons() {
   return (
     <Motion.div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }}>
-      <Motion.a href="#portfolio" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="group ring-2 border-0 ring-sky-300 bg-gradient-to-r from-sky-200 to-sky-600 hover:from-sky-100 hover:to-sky-700 hover:border-transparent text-sky-950 font-semibold px-8 py-4 rounded-full shadow-lg transition-all duration-300 flex items-center">
+      <Motion.a href="#portfolio" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="group ring-2 border-0 ring-sky-300 dark:ring-sky-600 bg-gradient-to-r from-sky-200 dark:from-sky-500 to-sky-600 dark:to-sky-700 hover:from-sky-100 dark:hover:from-sky-300 hover:to-sky-700 dark:hover:to-sky-500 hover:border-transparent dark:text-sky-100 text-sky-950 font-semibold px-8 py-4 rounded-full shadow-lg transition-all duration-300 flex items-center">
         View My Work
         <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </Motion.a>
 
-      <Motion.a href="#contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="group relative px-8 py-4 rounded-full text-violet-300 font-semibold border-1 border-b-2 border-violet-900 hover:border-violet-400 group overflow-hidden z-10 bg-gradient-to-b from-violet-100/0 via-violet-300/10 to-violet-500/20 hover:to-violet-500/40">
+      <Motion.a href="#contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="group relative px-8 py-4 rounded-full text-violet-300 dark:text-violet-700 font-semibold border-1 border-b-2 border-violet-900 dark:border-violet-500 hover:border-violet-400 dark:hover:border-violet-700 group overflow-hidden z-10 bg-gradient-to-b from-violet-100/0 via-violet-300/10 to-violet-500/20 hover:to-violet-500/40">
         <span className="relative z-10 flex items-center">
           <Mail className="group-hover:scale-125 transform transition-transform mr-2 w-5 h-5" />
           Get In Touch

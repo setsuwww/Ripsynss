@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { navItems } from "../constants/navItems"
+import ThemeToggle from './hooks/ThemeToggle'
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home")
@@ -33,60 +34,102 @@ const Navigation = () => {
   }, [])
 
   return (
-    <nav className={clsx("w-full fixed top-0 z-50 transition-all duration-300", scrolled ? "glass-effect shadow-lg" : "bg-transparent")} data-aos="fade-down">
-      <div className={clsx("max-w-7xl mx-auto transition-all duration-300", scrolled ? "p-3 px-6  lg:p-5" : "p-4 lg:p-7")}>
-        <div className="flex justify-between items-center">
-          <p className="font-pixel flex items-center space-x-3 font-bold">
-            <span className="text-md md:text-lg tracking-wider">
-              Rifqi<span className="gradient-text"> Synyster</span>
-            </span>
-          </p>
+    <header className='p-2'>
+      <nav
+        className={clsx(
+          "fixed z-50 transition-all duration-300",
+          "left-1/2 -translate-x-1/2",
+          scrolled ? "glass-effect top-4 md:px-8 rounded-full" : "top-6"
+        )}
+      >
+        <div
+          className={clsx(
+            "mx-auto",
+            "max-w-6xl w-[calc(100vw-2rem)] md:w-[calc(100vw-4rem)]",
+            "rounded-2xl md:rounded-full",
+            "border border-white/10",
+            "transition-all duration-300",
+            scrolled
+              ? "p-3 px-6 lg:p-5 border-none"
+              : "p-4 lg:p-7 border-none"
+          )}
+        >
 
-          <div className="hidden md:flex space-x-10">
-            {navItems.map((item) => (
-              <a key={item.href} href={item.href} className={clsx("flex items-center tracking-wide rounded-lg transition-all duration-300",
-                activeSection === item.href.slice(1)
-                  ? "text-sky-400 font-semibold bg-radial from-sky-500/15 to-transparent px-4 py-1"
-                  : "text-slate-500 hover:text-slate-300"
-              )}>
-                <span>{item.label}</span>
-              </a>
-            ))}
+          <div className="flex justify-between items-center">
+            <p className="font-pixel flex items-center space-x-3 font-bold">
+              <span className="text-md md:text-lg tracking-wider">
+                Rifqi<span className="gradient-text"> Synyster</span>
+              </span>
+            </p>
+
+            <div className="hidden md:flex space-x-8">
+              <div className="hidden md:flex space-x-8">
+              {navItems.map((item) => (
+                <a key={item.href} href={item.href} className={clsx("flex items-center tracking-wide rounded-lg transition-all duration-300",
+                  activeSection === item.href.slice(1)
+                    ? "text-sky-400 font-semibold bg-radial from-sky-500/15 to-transparent px-4 py-1"
+                    : "text-slate-500 hover:text-slate-300"
+                )}>
+                  <span>{item.label}</span>
+                </a>
+              ))}
+              </div>
+              <ThemeToggle />
+            </div>
+
+            <button onClick={() => setIsOpen(!isOpen)} className={clsx("md:hidden p-2 rounded-lg transition-all",
+              isOpen ? "text-rose-400 bg-rose-500/10"
+                : "text-sky-400 bg-sky-500/10"
+            )}
+            >{isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
 
-          {/* Mobile */}
-          <button onClick={() => setIsOpen(!isOpen)} className={clsx("md:hidden p-2 rounded-lg transition-all",
-            isOpen ? "text-rose-400 bg-rose-500/10"
-              : "text-sky-400 bg-sky-500/10"
-            )}
-          >{isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className={clsx(
+                  "md:hidden fixed z-50",
+                  "left-1/2 -translate-x-1/2",
+                  "w-[calc(100vw-2rem)] max-w-sm",
+                  "rounded-2xl border border-white/10",
+                  "bg-zinc-900/90 backdrop-blur-sm shadow-xl",
+                  scrolled ? "top-20" : "top-24"
+                )}
+              >
+                <ul className="flex flex-col p-3">
+                  {navItems.map((item) => {
+                    const active = activeSection === item.href.slice(1)
 
-        {/* Mobile */}
-        <AnimatePresence>
-          {isOpen && (<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3, ease: "easeOut" }}
-              className={clsx("md:hidden absolute left-0 right-0 z-50 backdrop-blur-sm border-b border-white/10 shadow-lg",
-                "bg-gradient-to-b from-slate-950/90 via-slate-900/90 to-slate-800/80",
-                scrolled ? "top-14" : "top-16"
-              )}
-            >
-              <div className="px-6 py-6 space-y-3 text-center">
-                {navItems.map((item) => (<motion.a key={item.href} href={item.href} 
-                  onClick={() => setIsOpen(false)} whileHover={{ scale: 1.05, x: 4 }} whileTap={{ scale: 0.95 }}
-                    className={clsx("relative inline-flex items-center justify-center font-semibold text-lg tracking-wide transition-all duration-300",
-                      "px-4 py-3 rounded-full group", activeSection === item.href.slice(1) ? "text-rose-300 bg-rose-500/10 shadow-inner"
-                        : "text-white/80 hover:text-white"
-                    )}
-                  ><span className="relative z-10">{item.label}</span>
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </nav>
+                    return (
+                      <li key={item.href} className='gap-y-2'>
+                        <a
+                          href={item.href}
+                          onClick={() => setIsOpen(false)}
+                          className={clsx(
+                            "block w-full rounded-xl px-4 py-2.5 text-center",
+                            "text-base font-medium transition-colors duration-200",
+                            active
+                              ? "bg-zinc-800/90"
+                              : "text-white/70 hover:bg-white/5 hover:text-white"
+                          )}
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </nav>
+    </header>
   )
 }
 

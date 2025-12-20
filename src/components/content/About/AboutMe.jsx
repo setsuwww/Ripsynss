@@ -9,7 +9,7 @@ function AboutSectionComponent() {
 
       <article className="text-slate-400 space-y-4 leading-[80px] md:leading-[26px]">
         {aboutParagraphs.map((text, i) => (
-          <p key={i} className="text-sm md:text-base tracking-wide md:tracking-wide">
+          <p key={i} className="shine-paragraph text-sm md:text-base tracking-wide md:tracking-wide">
             {text}
           </p>
         ))}

@@ -10,7 +10,7 @@ export default function Footer() {
 
           <div className="flex justify-center items-center space-x-2 text-slate-400 text-sm">
             <span>© {year}</span>
-            <span className="font-semibold gradient-text">Rifqi Synyster</span>
+            <span className="font-pixel font-medium gradient-text"><span className='text-white mr-1'>Rifqi</span>Synyster</span>
             <span>All rights reserved.</span>
           </div>
 

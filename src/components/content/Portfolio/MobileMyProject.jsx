@@ -1,14 +1,15 @@
 import React from "react";
 import { techColors } from "../../../constants/techColor";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
   return (
     <div className="w-full flex-shrink-0 px-4">
       <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
         <picture className="relative overflow-hidden cursor-pointer" onClick={onClick}>
-          <img loading="lazy"
-            src={project.image || "/placeholder.svg"}
-            alt={project.title}
+          <LazyLoadImage loading="lazy" effect="blur"
+            src={project.image || "/placeholder.svg"} alt={project.title}
             className="w-full h-48 object-cover transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -24,7 +25,7 @@ const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
                     techColors[tech] || "from-white/10 to-white/20 border-white/20 text-white"
                   } bg-gradient-to-r`}
                 >
-                  <span className="">{tech}</span>
+                  <span>{tech}</span>
                 </div>
               ))}
             </div>

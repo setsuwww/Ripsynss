@@ -48,7 +48,7 @@ export default function PortfolioPage() {
   return (
     <>
       <SEOHeader title="Ripsynss" description="Portfolio Page references" url="https://ripsynss.vercel.app" image="/pp.webp" />
-      <section className="relative w-full min-h-screen pt-20 pb-16 overflow-hidden bg-black">
+      <section className="relative w-full min-h-screen pt-20 pb-16 overflow-hidden bg-black dark:bg-white">
         <GridBackground />
         <BallsBackground />
 

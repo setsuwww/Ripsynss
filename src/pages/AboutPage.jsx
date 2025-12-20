@@ -36,20 +36,20 @@ const AboutPage = () => {
 
                 <div className="space-y-6">
                   {experiences.map((exp, index) => (
-                    <article key={index} className="border-l-2 border-yellow-400/20 pl-6 relative">
+                    <article key={index} className="border-l-2 border-yellow-400/20 dark:border-yellow-400/40 pl-6 relative">
                       <div className="absolute w-3 h-3 bg-yellow-400 border-b-2 border-yellow-600 rounded-full -left-[0.4rem] top-[7px]" data-aos="fade-up" data-aos-duration={600 + index * 200}></div>
-                      <h3 className="tracking-wide text-sm md:text-base font-semibold bg-gradient-to-r from-amber-500 to-yellow-200 bg-clip-text text-transparent inline-block" data-aos="fade-right" data-aos-duration={700 + index * 150}>
+                      <h3 className="tracking-wide text-sm md:text-base font-semibold bg-gradient-to-r from-amber-500 dark:from-amber-700 to-yellow-200 dark:to-yellow-400 bg-clip-text text-transparent inline-block" data-aos="fade-right" data-aos-duration={700 + index * 150}>
                         {exp.title}
                       </h3>
-                      <p className="flex items-center space-x-2 text-violet-200 text-xs md:text-sm font-medium my-0 md:my-1" data-aos="fade-right" data-aos-duration={800 + index * 100}>
-                        <span className="bg-violet-500/10 flex items-center space-x-2 px-2 py-0.5 rounded-full border border-violet-800/40">
+                      <p className="flex items-center space-x-2 text-violet-200 dark:text-violet-600 text-xs font-medium my-0 md:my-1" data-aos="fade-right" data-aos-duration={800 + index * 100}>
+                        <span className="bg-violet-500/10 flex items-center space-x-2 px-2 py-1 rounded-full border border-violet-800/40 dark:border-violet-800/20">
                           <GraduationCap className="w-4 h-4" /> <span>{exp.company}</span>
                         </span>
                       </p>
-                      <p className="text-slate-600 mt-2 mb-2 text-xs md:sm">
+                      <p className="text-slate-600 dark:text-slate-400 mt-2 mb-2 text-xs md:sm">
                         {exp.period}
                       </p>
-                      <p className="text-slate-300 text-xs md:text-sm">
+                      <p className="text-slate-300 dark:text-slate-600 text-xs md:text-sm">
                         {exp.description}
                       </p>
                     </article>

@@ -13,7 +13,7 @@ export const experiences = [
   },
   {
     title: "Fullstack Developer",
-    company: "Student",
+    company: "Internship",
     period: "2023 - Present",
     description: "Building a functionality applications with Fullstack Framework.",
   },

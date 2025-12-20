@@ -13,20 +13,23 @@ export default function LinuxHeader() {
         popup: "p-0 bg-transparent shadow-none",
       },
       html: (
-        <div className="flex flex-col rounded-xl overflow-hidden bg-slate-900 text-white shadow-2xl border border-slate-700">
-          <div className="flex items-center space-x-2 px-4 py-3 bg-slate-800 border-b border-slate-700">
+        <div className="flex flex-col rounded-xl overflow-hidden bg-zinc-900 text-white shadow-2xl border border-zinc-800">
+          <div className="flex items-center space-x-2 px-4 py-3 bg-zinc-800 border-b border-zinc-700">
             <button id="mac-close" className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600"/>
-            <span className="w-3 h-3 rounded-full bg-yellow-400 hover:bg-yellow-500" />
-            <span className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600" />
+            <span className="w-3 h-3 rounded-full bg-gray-700/80" />
+            <span className="w-3 h-3 rounded-full bg-gray-700/80" />
           </div>
           <div className="p-8 text-center">
             <div className="bg-gradient-to-br from-rose-500/10 to-rose-500/30 border border-pink-700 rounded-md w-16 h-16 flex items-center justify-center mx-auto mb-4">
             <Heart className="w-8 h-8 mx-auto text-pink-400" />
             </div>
             <h2 className="text-lg font-bold mb-2">Thank you</h2>
-            <p className="text-slate-300">
+            <p className="text-zinc-300 mb-2">
               Thank you for visiting my portfolio website.
             </p>
+            <a className="text-zinc-500">
+              @mg_eaterrrr
+            </a>
           </div>
         </div>
       ),
