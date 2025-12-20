@@ -50,7 +50,7 @@ const ContactPage = () => {
   return (
     <>
       <SEOHeader title="Ripsynss" description="Contact Page references" url="https://ripsynss.vercel.app" image="/pp.webp" />
-      <main className="w-full relative min-h-screen pt-20 bg-black dark:bg-white text-white dark:text-slate-600">
+      <main className="w-full relative min-h-screen pt-20 bg-slate-800 dark:bg-white text-white dark:text-slate-600">
         <BallsBackground />
         <GridBackground />
 
@@ -113,7 +113,7 @@ const ContactPage = () => {
                           <div
                             className="
           w-5 h-5 border-2 rounded-full animate-spin
-          border-black/30 border-t-black
+          border-slate-800/30 border-t-slate-800
           dark:border-slate-400/60 dark:border-t-slate-900
         "
                           />

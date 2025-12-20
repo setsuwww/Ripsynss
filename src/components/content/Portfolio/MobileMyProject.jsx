@@ -6,13 +6,13 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
   return (
     <div className="w-full flex-shrink-0 px-4">
-      <div className="bg-white/10 dark:bg-black/10 border border-white/10 dark:border-black/10 rounded-2xl overflow-hidden">
+      <div className="bg-white/10 dark:bg-slate-800/10 border border-white/10 dark:border-slate-800/10 rounded-2xl overflow-hidden">
         <picture className="relative overflow-hidden cursor-pointer" onClick={onClick}>
           <LazyLoadImage loading="lazy" effect="blur"
             src={project.image || "/placeholder.svg"} alt={project.title}
             className="w-full h-48 object-cover transition-transform duration-300"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent" />
         </picture>
         <div className="p-6">
           <h3 className="text-base md:text-lg font-bold text-white dark:text-slate-800 mb-3">{project.title}</h3>

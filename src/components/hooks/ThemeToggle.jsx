@@ -11,7 +11,7 @@ export default function ThemeToggle() {
         w-7 h-7 rounded-full
         border border-sky-700/40 dark:border-yellow-500/40
         transition-colors
-        hover:bg-black/5 dark:hover:bg-white/10
+        hover:bg-slate-800/5 dark:hover:bg-white/10
       "
       >
         {/* Ping ring */}

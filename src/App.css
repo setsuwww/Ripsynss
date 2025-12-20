@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-black text-white overflow-x-hidden;
+    @apply bg-slate-800 text-white overflow-x-hidden;
     font-family: "InstrumentSans";
     scrollbar-width: none;
   }
@@ -82,7 +82,7 @@
   }
 
   .dark .glass-effect {
-    @apply bg-gray-400/10 backdrop-blur-sm border-b border-black/10;
+    @apply bg-gray-400/10 backdrop-blur-sm border-b border-slate-800/10;
   }
 
   .gradient-text {
@@ -136,8 +136,8 @@
 
   .dark .input {
     @apply w-full px-4 py-3 rounded-lg
-      bg-black/5 border border-black/10
-      text-black placeholder-slate-600
+      bg-slate-800/5 border border-slate-800/10
+      text-slate-800 placeholder-slate-600
       focus:ring-2 focus:ring-violet-100/40
       focus:border focus:border-violet-200/20
       outline-none focus:outline-2 outline-violet-200

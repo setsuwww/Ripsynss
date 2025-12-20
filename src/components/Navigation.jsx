@@ -107,7 +107,7 @@ const Navigation = () => {
                   "w-[calc(100vw-2rem)] max-w-sm",
                   "rounded-2xl border",
                   "bg-zinc-900/90 dark:bg-white/90",
-                  "border-white/10 dark:border-black/10",
+                  "border-white/10 dark:border-slate-800/10",
                   "backdrop-blur-sm shadow-xl",
                   scrolled ? "top-20" : "top-24"
                 )}
@@ -126,7 +126,7 @@ const Navigation = () => {
                             "text-base font-medium transition-colors duration-200",
                             active
                               ? "bg-zinc-800/90 dark:bg-slate-200 text-white dark:text-slate-900"
-                              : "text-white/70 dark:text-slate-700 hover:bg-white/5 dark:hover:bg-black/5"
+                              : "text-white/70 dark:text-slate-700 hover:bg-white/5 dark:hover:bg-slate-800/5"
                           )}
                         >
                           {item.label}

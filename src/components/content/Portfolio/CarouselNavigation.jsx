@@ -2,15 +2,15 @@ import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CarouselNav = React.memo(function CarouselNav({ onPrev, onNext, current, total }) {
-  const baseClass = "absolute top-1/2 -translate-y-1/2 bg-white/10 dark:bg-black/10 backdrop-blur-xs border border-white/20 dark:border-black/20 rounded-full p-3 z-10";
+  const baseClass = "absolute top-1/2 -translate-y-1/2 bg-white/10 dark:bg-slate-800/10 backdrop-blur-xs border border-white/20 dark:border-slate-800/20 rounded-full p-3 z-10";
 
   return (
     <>
       <button onClick={onPrev} disabled={current === 0} className={`${baseClass} left-0 -translate-x-2`}>
-        <ChevronLeft className="w-5 h-5 text-white dark:text-black" />
+        <ChevronLeft className="w-5 h-5 text-white dark:text-slate-800" />
       </button>
       <button onClick={onNext} disabled={current === total - 1} className={`${baseClass} right-0 translate-x-2`}>
-        <ChevronRight className="w-5 h-5 text-white dark:text-black" />
+        <ChevronRight className="w-5 h-5 text-white dark:text-slate-800" />
       </button>
     </>
   );
