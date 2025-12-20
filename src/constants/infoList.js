@@ -4,8 +4,8 @@ export const infoList = [
   {
     icon: MapPin,
     value: 'Bekasi, West java, Indonesia',
-    color: 'text-sky-400 dark:text-sky-600 bg-sky-400/10 border-l border-0 border-sky-900 dark:border-sky-300',
-    colorHover: 'group-hover:text-sky-300 dark:group-hover:text-sky-600 stroke-1',
+    color: 'text-sky-400 dark:text-yellow-600 bg-sky-400/10 dark:bg-yellow-400/10 border-l border-0 border-sky-900 dark:border-yellow-300',
+    colorHover: 'group-hover:text-sky-300 dark:group-hover:text-yellow-600 stroke-1',
     animation: 'fade-down',
     delay: 200,
   },

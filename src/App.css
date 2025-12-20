@@ -72,7 +72,7 @@
 }
 
 .dark .typing-font {
-  @apply text-slate-700;
+  @apply text-yellow-700;
   text-shadow: none;
 }
 
@@ -82,7 +82,7 @@
   }
 
   .dark .glass-effect {
-    @apply bg-gray-500/5   backdrop-blur-sm border-b border-black/10;
+    @apply bg-gray-400/10 backdrop-blur-sm border-b border-black/10;
   }
 
   .gradient-text {
@@ -103,10 +103,10 @@
   .dark .gradient-text {
     background: linear-gradient(
       90deg,
-      oklch(52% 0.15 232),
+      oklch(68.1% 0.162 75.834),
       oklch(55% 0.18 305),
       oklch(58% 0.17 13),
-      oklch(52% 0.15 232)
+      oklch(68.1% 0.162 75.834)
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -127,13 +127,22 @@
     @apply w-full px-4 py-3 rounded-lg
       bg-white/5 border border-white/10
       text-white placeholder-slate-400
-      focus:ring-2 focus:ring-violet-500/20
+      focus:ring-2 focus:ring-violet-500/10
+      focus:border focus:border-violet-500/40
+      outline-none focus:outline-2 outline-violet-600
+      focus:inset-shadow-sm focus:inset-shadow-violet-600/40
       transition-all;
   }
 
   .dark .input {
-    @apply bg-white border border-black/10
-      text-slate-900 placeholder-slate-500;
+    @apply w-full px-4 py-3 rounded-lg
+      bg-black/5 border border-black/10
+      text-black placeholder-slate-600
+      focus:ring-2 focus:ring-violet-100/40
+      focus:border focus:border-violet-200/20
+      outline-none focus:outline-2 outline-violet-200
+      focus:inset-shadow-sm focus:inset-shadow-violet-400/40
+      transition-all;
   }
 }
 

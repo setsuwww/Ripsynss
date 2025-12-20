@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
   return (
     <div className="w-full flex-shrink-0 px-4">
-      <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
+      <div className="bg-white/10 dark:bg-black/10 border border-white/10 dark:border-black/10 rounded-2xl overflow-hidden">
         <picture className="relative overflow-hidden cursor-pointer" onClick={onClick}>
           <LazyLoadImage loading="lazy" effect="blur"
             src={project.image || "/placeholder.svg"} alt={project.title}
@@ -15,10 +15,10 @@ const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </picture>
         <div className="p-6">
-          <h3 className="text-base md:text-lg font-bold text-white mb-3">{project.title}</h3>
-          <p className="text-slate-400 mb-6 text-xs md:text-sm leading-relaxed">{project.description}</p>
+          <h3 className="text-base md:text-lg font-bold text-white dark:text-slate-800 mb-3">{project.title}</h3>
+          <p className="text-slate-400 dark:text-slate-600 mb-6 text-xs md:text-sm leading-relaxed">{project.description}</p>
           <div className="space-y-3">
-            <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider">Built with</h4>
+            <h4 className="text-xs font-semibold text-slate-300 dark:text-slate-500 uppercase tracking-wider">Built with</h4>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, i) => (
                 <div key={i} className={`px-3 py-1.5 text-xs font-medium rounded-full border ${

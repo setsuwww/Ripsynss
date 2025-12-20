@@ -5,23 +5,23 @@ export default function Footer() {
 
   return (
     <footer className="relative w-full">
-      <div className="relative z-10 bg-white/5 backdrop-blur-xs border-t border-white/10">
+      <div className="relative z-10 bg-white/5 dark:bg-black/5 backdrop-blur-xs border-t border-white/10 dark:border-black/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
 
-          <div className="flex justify-center items-center space-x-2 text-slate-400 text-sm">
+          <div className="flex justify-center items-center space-x-2 text-slate-400 dark:text-slate-600 text-sm">
             <span>© {year}</span>
-            <span className="font-pixel font-medium gradient-text"><span className='text-white mr-1'>Rifqi</span>Synyster</span>
+            <span className="font-pixel font-medium gradient-text"><span className='text-white dark:text-black mr-1'>Rifqi</span>Synyster</span>
             <span>All rights reserved.</span>
           </div>
 
           <div className="flex justify-center items-center mt-3 space-x-2 text-xs text-slate-500">
             <span>Made with</span>
-            <Heart className="w-3 h-3 text-rose-400 animate-pulse" />
+            <Heart className="w-3 h-3 text-rose-400 dark:text-rose-600 animate-pulse" />
             <span>by a passionate developer</span>
           </div>
 
           <div className="mt-6 flex justify-center">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-sky-400/50 to-transparent" />
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-sky-400/50 dark:via-yellow-400/60 to-transparent" />
           </div>
         </div>
       </div>
