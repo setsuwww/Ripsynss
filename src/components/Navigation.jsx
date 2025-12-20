@@ -86,8 +86,8 @@ const Navigation = () => {
               className={clsx(
                 "md:hidden p-2 rounded-lg transition-all",
                 isOpen
-                  ? "text-sky-400 bg-sky-500/10 dark:text-sky-600 dark:bg-sky-500/20"
-                  : "text-yellow-400 bg-yellow-500/10 dark:text-yellow-600 dark:bg-yellow-500/20"
+                  ? "text-sky-400 bg-sky-500/10 dark:text-yellow-600 dark:bg-yellow-500/20"
+                  : "text-rose-400 bg-rose-500/10 dark:text-rose-600 dark:bg-rose-500/10"
               )}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}

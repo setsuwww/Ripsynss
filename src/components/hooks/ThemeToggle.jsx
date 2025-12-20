@@ -8,7 +8,7 @@ export default function ThemeToggle() {
       <div
         className="
         relative flex items-center justify-center
-        w-7 h-7 rounded-full
+        w-6 md:w-7 h-6 md:h-7 rounded-full
         border border-sky-700/40 dark:border-yellow-500/40
         transition-colors
         hover:bg-slate-800/5 dark:hover:bg-white/10
@@ -26,7 +26,7 @@ export default function ThemeToggle() {
         {/* Solid dot */}
         <span
           className="
-          relative inline-flex h-3 w-3 rounded-full
+          relative inline-flex h-2 md:h-3 w-2 md:w-3 rounded-full
           bg-sky-400 hover:bg-sky-600 dark:bg-yellow-400 hover:dark:bg-yellow-600
           transition-all
         "
