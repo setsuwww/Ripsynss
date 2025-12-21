@@ -18,8 +18,7 @@ const ContactPage = () => {
   const formRef = useRef(null)
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
+    setFormData({...formData,
       [e.target.name]: e.target.value,
     });
   };
@@ -30,9 +29,9 @@ const ContactPage = () => {
 
     emailjs
       .sendForm(
-        "service_bf2o4rb",     // Ganti ini dari EmailJS dashboard
-        "template_mg74d3b",    // Ganti ini juga
-        "o-nN0BPW-JTaEyW58",  // Ganti dengan public key kamu
+        "service_bf2o4rb",
+        "template_mg74d3b",
+        "o-nN0BPW-JTaEyW58",
         formRef.current,
       )
       .then(() => {
@@ -61,7 +60,7 @@ const ContactPage = () => {
 
           <section className="relative px-2 sm:px-6 md:px-12 lg:px-24 py-10 sm:py-12">
             <div className="grid gap-10 lg:gap-12">
-              <div className="backdrop-blur-xs bg-white/5 dark:gray-500/40 border border-white/10 dark:border-gray-500/20 rounded-xl overflow-hidden outline outline-offset-4 outline-slate-400/10 dark:outline-slate-300/40">
+              <div className="backdrop-blur-xs bg-white/5 dark:gray-500/40 border border-white/10 dark:border-gray-500/20 rounded-xl overflow-hidden outline outline-offset-4 outline-slate-400/10 dark:outline-slate-300/35">
 
                 <LinuxHeader />
 
@@ -86,37 +85,13 @@ const ContactPage = () => {
                       <textarea id="message" name="message" required rows={6} value={formData.message} onChange={handleChange} className="input" placeholder="You're free to say whatever you..." />
                     </div>
 
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="
-    group w-full flex items-center justify-center space-x-2
-    py-4 px-6 rounded-lg font-base tracking-wider
-    outline-offset-4 outline-1 outline-slate-500/10
-    ring-1 ring-slate-400/20
-    bg-slate-600/20
-    hover:ring-violet-400/20
-    hover:bg-radial hover:from-violet-500/10
-    transition-colors duration-200 ease-linear
-    disabled:opacity-50 disabled:cursor-not-allowed
-
-    dark:bg-white/80
-    dark:ring-slate-300/40
-    dark:outline-slate-300/30
-    dark:text-slate-900
-    dark:hover:ring-violet-500/30
-    dark:hover:bg-radial dark:hover:from-violet-500/20
-  "
-                    >
+                    <button type="submit" disabled={isSubmitting}
+                      className="group w-full flex items-center justify-center space-x-2 py-4 px-6 rounded-lg font-base tracking-wider outline-offset-4 outline-1 outline-slate-500/10 ring-1 ring-slate-400/20 bg-slate-600/20 hover:ring-violet-400/20 hover:bg-radial hover:from-violet-500/10 transition-colors duration-200 ease-linear disabled:opacity-50 disabled:cursor-not-allowed
+                               dark:bg-white/80 dark:ring-slate-300/60 dark:outline-slate-300/30 dark:text-slate-600 dark:hover:ring-violet-500/30 dark:hover:bg-radial dark:hover:from-violet-500/20"
+                      >
                       {isSubmitting ? (
                         <>
-                          <div
-                            className="
-          w-5 h-5 border-2 rounded-full animate-spin
-          border-slate-800/30 border-t-slate-800
-          dark:border-slate-400/60 dark:border-t-slate-900
-        "
-                          />
+                          <div className="w-5 h-5 border-2 rounded-full animate-spin border-slate-800/30 border-t-slate-800 dark:border-slate-400/60 dark:border-t-slate-900"/>
                           <span>Sending...</span>
                         </>
                       ) : (

@@ -6,7 +6,7 @@ export const techColors = {
 
   Nextjs: `
     from-slate-800/20 to-slate-800/20 border-white/30 text-white
-    dark:from-slate-200/10 dark:to-slate-100/10 dark:border-slate-400/20 dark:text-slate-800
+    dark:from-slate-200/40 dark:to-slate-100/40 dark:border-slate-400/20 dark:text-slate-800
   `,
 
   Vuejs: `

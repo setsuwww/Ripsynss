@@ -4,7 +4,7 @@ export const skills = [
     level: 95,
     color: `
       from-white to-slate-400
-      dark:from-slate-500 dark:to-slate-700
+      dark:from-slate-400 dark:to-slate-600
     `,
   },
   {
@@ -12,7 +12,7 @@ export const skills = [
     level: 95,
     color: `
       from-sky-400 to-sky-600
-      dark:from-sky-600 dark:to-sky-800
+      dark:from-sky-500 dark:to-sky-700
     `,
   },
   {
@@ -20,7 +20,7 @@ export const skills = [
     level: 80,
     color: `
       from-emerald-400 to-emerald-600
-      dark:from-emerald-600 dark:to-emerald-800
+      dark:from-emerald-500 dark:to-emerald-700
     `,
   },
   {
@@ -28,7 +28,7 @@ export const skills = [
     level: 80,
     color: `
       from-green-400 to-green-600
-      dark:from-green-600 dark:to-green-800
+      dark:from-green-500 dark:to-green-700
     `,
   },
   {
@@ -36,7 +36,7 @@ export const skills = [
     level: 95,
     color: `
       from-red-400 to-red-600
-      dark:from-red-600 dark:to-red-800
+      dark:from-red-500 dark:to-red-700
     `,
   },
   {
@@ -44,7 +44,7 @@ export const skills = [
     level: 80,
     color: `
       from-purple-400 to-purple-600
-      dark:from-purple-600 dark:to-purple-800
+      dark:from-purple-500 dark:to-purple-700
     `,
   },
   {
@@ -53,7 +53,7 @@ export const skills = [
     level: 85,
     color: `
       from-blue-400 to-blue-500
-      dark:from-blue-600 dark:to-blue-800
+      dark:from-blue-500 dark:to-blue-700
     `,
   },
   {
@@ -62,7 +62,7 @@ export const skills = [
     level: 90,
     color: `
       from-yellow-400 to-yellow-600
-      dark:from-yellow-600 dark:to-yellow-800
+      dark:from-yellow-500 dark:to-yellow-700
     `,
   },
 ]

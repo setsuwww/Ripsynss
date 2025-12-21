@@ -82,14 +82,14 @@ export default function PortfolioPage() {
       <div className="flex items-center justify-center w-full my-12 gap-4">
         <div className="flex-1 h-px bg-gradient-to-r from-transparent via-sky-500/20 dark:via-yellow-500/30 to-transparent" />
 
-        <div className="group px-3 py-4 md:py-2.5 rounded-full border border-slate-500/30 md:border-slate-500/15 hover:border-slate-500/30 dark:hover:border-slate-300/40 delay-5 transition-all md:hover:py-4 cursor-pointer hover:shadow-lg hover:shadow-slate-500/15">
+        <div className="group px-3 py-4 md:py-2.5 rounded-full border border-slate-500/30 md:border-slate-500/15 hover:border-slate-500/30 dark:hover:border-slate-300/50 delay-5 transition-all md:hover:py-4 cursor-pointer hover:shadow-lg dark:hover:shadow-xs hover:shadow-slate-500/15">
           <a href="https://github.com/setsuwww" target="_blank" rel="noopener noreferrer"
             className="
             group px-5 py-3 rounded-full 
-            bg-slate-500/10 dark:bg-slate-300/10 border border-slate-500/35 md:border-slate-500/10 group-hover:border-slate-500/35 dark:group-hover:border-slate-300/45 delay-10 transition-all
+            bg-slate-500/10 dark:bg-slate-300/10 border border-slate-500/35 md:border-slate-500/10 group-hover:border-slate-500/35 dark:group-hover:border-slate-300/55 delay-10 transition-all
           "
           >
-            <span className="px-4 py-1.5 rounded-full border border-slate-500/45 md:border-slate-500/5 group-hover:border-slate-500/45 dark:group-hover:border-slate-300/50 gradient-text delay-15 transition-all">View My GitHub</span>
+            <span className="px-4 py-1.5 rounded-full border border-slate-500/45 md:border-slate-500/5 group-hover:border-slate-500/45 dark:group-hover:border-slate-300/60 gradient-text delay-15 transition-all">View My GitHub</span>
           </a>
         </div>
 

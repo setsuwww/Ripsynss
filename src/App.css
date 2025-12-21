@@ -52,12 +52,16 @@
     @apply bg-slate-100 text-slate-900;
   }
 
-  body::-webkit-scrollbar, ::-webkit-scrollbar {
+  body::-webkit-scrollbar,
+  ::-webkit-scrollbar {
     display: none;
     width: 0;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: "Orbitron";
   }
 }
@@ -78,11 +82,11 @@
 
 @layer components {
   .glass-effect {
-    @apply bg-white/5 backdrop-blur-sm border-b border-white/10;
+    @apply bg-white/5 backdrop-blur-sm border-b-2 border-white/10;
   }
 
   .dark .glass-effect {
-    @apply bg-gray-400/10 backdrop-blur-sm border-b border-slate-800/10;
+    @apply bg-zinc-400/10 backdrop-blur-sm border-b-2 border-slate-600/15;
   }
 
   .gradient-text {
@@ -115,6 +119,62 @@
     animation: shine 5.5s linear infinite;
   }
 
+  .shine-border {
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(168, 85, 247, 0.8),
+        transparent
+      )
+      repeat;
+    background-size: 200% 200%;
+    animation: shineSweep 2s linear infinite;
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+
+    padding: 2px;
+    border-radius: 9999px;
+    filter: blur(2px);
+    opacity: 0.7;
+  }
+
+  .dark .shine-border {
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(251, 191, 36, 0.85),
+        transparent
+      )
+      repeat;
+
+    filter: blur(1.5px);
+    opacity: 0.6;
+  }
+
+  @keyframes shineSweep {
+    0% {
+      background-position: 200% 0%;
+    }
+    100% {
+      background-position: -200% 0%;
+    }
+    .dark .shiny-text {
+      background: linear-gradient(
+        90deg,
+        oklch(35% 0.02 255),
+        oklch(35% 0.05 257),
+        oklch(75% 0.02 255)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+
   .label {
     @apply block text-sm font-medium text-slate-300 mb-2;
   }
@@ -128,8 +188,8 @@
       bg-white/5 border border-white/10
       text-white placeholder-slate-400
       focus:ring-2 focus:ring-violet-500/10
-      focus:border focus:border-violet-500/40
-      outline-none focus:outline-2 outline-violet-600
+      focus:border focus:border-violet-500/10
+      outline-offset-2 focus:outline outline-violet-500/20
       focus:inset-shadow-sm focus:inset-shadow-violet-600/40
       transition-all;
   }
@@ -138,10 +198,10 @@
     @apply w-full px-4 py-3 rounded-lg
       bg-slate-800/5 border border-slate-800/10
       text-slate-800 placeholder-slate-600
-      focus:ring-2 focus:ring-violet-100/40
-      focus:border focus:border-violet-200/20
-      outline-none focus:outline-2 outline-violet-200
-      focus:inset-shadow-sm focus:inset-shadow-violet-400/40
+      focus:ring-2 focus:ring-violet-100/50
+      focus:border focus:border-violet-100/50
+      outline-none focus:outline-2 outline-violet-200/50
+      focus:inset-shadow-sm focus:inset-shadow-violet-400/60
       transition-all;
   }
 }
@@ -202,6 +262,11 @@
     transform: rotate(var(--angle)) translateX(-600px);
     opacity: 0;
   }
+}
+
+@keyframes gridMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 50px; }
 }
 
 .animate-fade-in {
