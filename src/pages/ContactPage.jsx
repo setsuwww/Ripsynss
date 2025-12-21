@@ -87,7 +87,7 @@ const ContactPage = () => {
 
                     <button type="submit" disabled={isSubmitting}
                       className="group w-full flex items-center justify-center space-x-2 py-4 px-6 rounded-lg font-base tracking-wider outline-offset-4 outline-1 outline-zinc-500/10 ring-1 ring-zinc-400/20 bg-zinc-600/20 hover:ring-violet-400/20 hover:bg-radial hover:from-violet-500/10 transition-colors duration-200 ease-linear disabled:opacity-50 disabled:cursor-not-allowed
-                               dark:bg-white/80 dark:ring-slate-300/60 dark:outline-slate-300/30 dark:text-slate-600 dark:hover:ring-violet-500/30 dark:hover:bg-radial dark:hover:from-violet-500/20"
+                               dark:bg-white/80 dark:ring-slate-300/60 dark:outline-slate-300/30 dark:text-slate-600 dark:hover:ring-violet-500/30 dark:hover:bg-radial dark:hover:from-violet-500/20 cursor-pointer"
                       >
                       {isSubmitting ? (
                         <>

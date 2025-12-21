@@ -4,7 +4,7 @@ import { frameworks } from "../../../constants/frameworks"
 const FrameworkGrid = () => {
   const renderedFrameworks = useMemo(
     () => frameworks.map(({ Icon, title, color, bg, border, outline, description }) => (
-          <div data-aos="zoom-in" key={title} className={`group glass-effect relative rounded-2xl p-6 flex flex-col items-start hover:bg-slate-500/10 border-b-0 border-l-2 hover:border-l-[3px] ${border} transition-all duration-100 ease-in outline outline-offset-4 outline-slate-500/15 ${outline}`}>
+          <div data-aos="zoom-in" key={title} className={`group glass-effect relative rounded-2xl p-6 flex flex-col items-start hover:bg-slate-500/10 border-b-0 border-l-2 hover:border-l-[3px] ${border} outline outline-offset-4 outline-slate-500/15 ${outline}`}>
             <div className={`w-12 h-12 mb-4 rounded-full ${bg} flex items-center justify-center`}>
               <Icon className={`group-hover:stroke-[0.1px] w-8 h-8 ${color}`} />
             </div>
