@@ -20,7 +20,7 @@ const HomePage = () => {
         <GridBackground />
 
         <main className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-16">
-          <div className="text-center max-w-5xl mx-auto">
+          <div className="text-center max-w-md md:max-w-5xl mx-auto">
             <WelcomeBadge />
 
             <header>
@@ -28,8 +28,8 @@ const HomePage = () => {
               <TypingEffect />
             </header>
 
-            <section aria-label="Description" className="mt-6">
-              <p className="text-slate-400 dark:text-slate-500 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <section aria-label="Description" className="mt-2 md:mt-6">
+              <p className="text-slate-400 dark:text-slate-500 mb-12 max-w-xs md:max-w-3xl mx-auto leading-relaxed">
                 {description}
               </p>
             </section>

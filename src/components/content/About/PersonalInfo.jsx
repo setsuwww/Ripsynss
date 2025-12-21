@@ -1,29 +1,18 @@
-import TitleForm from '../../common/FormTitle'
+import { memo } from "react"
 
-import { infoList } from '../../../constants/infoList'
-
-function InfoRow({ icon, value, color, colorHover, animation, delay }) {
-  const Icon = icon;
-
+const InfoRow = memo(function InfoRow({ icon: Icon, value, color, colorHover }) {
   return (
-    <div aria-label='Card Personal' className="group flex items-center space-x-3" data-aos={animation} data-aos-delay={delay}>
-      <div className={`group p-2 md:p-2 rounded-full ${color} flex-shrink-0 transition-colors`}>
-        <Icon className={`w-5 h-5 md:w-7 md:h-7 ${colorHover} transform transition-all duration-300 ease-out rotate-0 scale-90 hover:rotate-15 hover:scale-110`} />
+    <div className="group flex items-center space-x-3">
+      <div className={`p-2 rounded-full ${color} transition-colors`}>
+        <Icon className={`w-6 h-6 ${colorHover} transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110`} />
       </div>
-      <p className="font-pixel text-slate-300 dark:text-slate-500 text-xs md:text-base">{value}</p>
+      <p className="font-pixel text-slate-300 dark:text-slate-500 text-sm md:text-base">
+        {value}
+      </p>
     </div>
   )
-}
+})
 
-export default function AboutPersonal() {
-  return (
-    <div className="glass-effect rounded-2xl p-6" data-aos="fade-left">
-      <TitleForm title="My Personal Info" />
-      <div className="space-y-4">
-        {infoList.map((item, i) => (
-          <InfoRow key={i} {...item} />
-        ))}
-      </div>
-    </div>
-  )
-}
+export default InfoRow
+
+

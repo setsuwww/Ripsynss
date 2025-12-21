@@ -5,7 +5,9 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ProjectCard = React.memo(function ProjectCard({ project, index, onClick }) {
   return (
-    <div className="group relative bg-white/5 backdrop-blur-xs border border-white/10 dark:border-gray-400/30 rounded-2xl overflow-hidden transition-colors"
+    <div className="group relative bg-white/5 backdrop-blur-xs border border-white/10 hover:border-sky-500/30 dark:border-gray-400/30 dark:hover:border-yellow-300/50 rounded-2xl overflow-hidden cursor-pointer
+      hover:outline hover:outline-offset-4 hover:outline-sky-500/20 dark:hover:outline-yellow-200/50 transition-all
+    "
       data-aos="zoom-in"
     >
       <div className="relative overflow-hidden cursor-pointer p-2 rounded-2xl" onClick={() => onClick(index)}>

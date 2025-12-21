@@ -1,55 +1,64 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+
+const container = {
+  hidden: { opacity: 1 },
+  exit: { opacity: 0, y: -200, transition: { duration: 1 } },
+}
+
+const text = {
+  hidden: { y: 80, opacity: 0 },
+  visible: (delay = 0) => ({
+    y: 0,
+    opacity: 1,
+    transition: { duration: 1, delay },
+  }),
+}
 
 export default function IntroWrapper({ children }) {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowIntro(false), 1200);
-    return () => clearTimeout(timer);
-  }, []);
+    const timer = setTimeout(() => setShowIntro(false), 1200)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
       <AnimatePresence>
         {showIntro && (
           <motion.div
-            key="intro"
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 1 }}
-            className="fixed inset-0 flex items-center justify-center bg-black z-50 lg:p-0 p-8"
+            variants={container}
+            initial="hidden"
+            exit="exit"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black p-8"
           >
-            <div className="outline-1 outline-offset-6 outline-sky-600 ring ring-sky-500/10 border-0 border-t-2 border-sky-500/20 shadow-xl shadow-sky-900/50 rounded-xl p-8 flex flex-row items-center gap-12">
+            <div className="rounded-xl p-8 shadow-xl shadow-sky-900/50 ring ring-sky-500/10">
+              <motion.h1
+                custom={0}
+                variants={text}
+                initial="hidden"
+                animate="visible"
+                className="text-2xl md:text-4xl font-bold gradient-text"
+              >
+                Sheeshh!
+              </motion.h1>
 
-              <div className="flex flex-col text-left">
-                <motion.h1
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -200, opacity: 0 }}
-                  transition={{ duration: 1 }}
-                  className="text-2xl md:text-4xl font-bold gradient-text"
-                >
-                  Sheeshh!
-                </motion.h1>
-
-                <motion.p
-                  initial={{ y: 50, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -100, opacity: 0 }}
-                  transition={{ duration: 1, delay: 0.3 }}
-                  className="mt-4 text-md md:text-lg text-slate-300 max-w-sm"
-                >
-                  When code meets artistic imagination, infinitely elegant art is created
-                </motion.p>
-              </div>
+              <motion.p
+                custom={0.3}
+                variants={text}
+                initial="hidden"
+                animate="visible"
+                className="mt-4 max-w-sm text-md md:text-lg text-slate-300"
+              >
+                When code meets artistic imagination, infinitely elegant art is created
+              </motion.p>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {!showIntro && <>{children}</>}
+      {!showIntro && children}
     </>
-  );
+  )
 }

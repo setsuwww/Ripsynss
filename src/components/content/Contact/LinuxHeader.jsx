@@ -17,17 +17,19 @@ export default function LinuxHeader() {
           </div>
 
           <div className="p-8 text-center">
-            <div className="bg-gradient-to-br from-rose-500/10 to-rose-500/30 border border-pink-700 dark:from-rose-400/20 dark:to-rose-400/40 dark:border-pink-400 rounded-md w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-gradient-to-br from-rose-500/10 to-rose-500/30 border border-pink-700 dark:from-rose-300/10 dark:to-rose-300/30 dark:border-pink-200 rounded-md w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Heart className="w-8 h-8 text-pink-400 dark:text-pink-500" />
             </div>
 
             <h2 className="text-lg font-bold mb-2">Thank you</h2>
 
-            <p className="text-zinc-300 dark:text-zinc-600 mb-2">
+            <p className="text-zinc-300 dark:text-zinc-600 mb-5">
               Thank you for visiting my portfolio website.
             </p>
 
-            <a className="text-zinc-500 dark:text-zinc-400">
+            <a href="https://www.instagram.com/mg_eaterrrr" target="_blank" rel="noopener noreferrer" 
+              className="text-sm font-semibold dark:text-white dark:hover:text-yellow-300 dark:bg-slate-800 text-slate-800 hover:text-sky-700 bg-white px-3 py-2 rounded-full cursor-pointer"
+            >
               @mg_eaterrrr
             </a>
           </div>

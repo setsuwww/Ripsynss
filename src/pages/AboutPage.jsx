@@ -2,7 +2,7 @@ import { GraduationCap } from "lucide-react"
 
 import BallsBackground from "../components/common/SoftGradients"
 import AboutMe from "../components/content/About/AboutMe"
-import AboutPersonal from "../components/content/About/PersonalInfo"
+import { AboutPersonal } from "@/components/content/About/PersonalSlug"
 import TitleSection from "../components/common/PageTitle"
 
 import { experiences } from "../constants/experiences"
