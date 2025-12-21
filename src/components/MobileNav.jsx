@@ -14,7 +14,7 @@ export default function MobileNav({ open, active, onClose, scrolled }) {
           transition={{ duration: 0.2 }}
           className={clsx(
             "md:hidden fixed z-50 left-1/2 -translate-x-1/2",
-            "w-[calc(100vw-2rem)] max-w-sm rounded-2xl border border-slate-500",
+            "w-[calc(100vw-2rem)] max-w-sm rounded-2xl border dark:border-slate-300 border-zinc-700/50",
             "bg-zinc-900/90 dark:bg-white/90 backdrop-blur-sm shadow-xl",
             scrolled ? "top-20" : "top-24"
           )}

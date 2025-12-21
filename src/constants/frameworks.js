@@ -18,6 +18,7 @@ export const frameworks = [
       dark:border-slate-200/30 dark:hover:border-slate-600/50
       dark:hover:bg-gradient-to-br dark:hover:from-slate-200/40 dark:hover:to-transparent
     `,
+    outline: `hover:outline-white/20 dark:hover:outline-slate-400`,
     description:
       "A powerful React framework with CSR, SSR, ISR, SSG, API Routing and SEO Performance",
   },
@@ -39,6 +40,7 @@ export const frameworks = [
       dark:border-emerald-600/30 dark:hover:border-emerald-700/50
       dark:hover:bg-gradient-to-br dark:hover:from-emerald-500/10 dark:hover:to-transparent
     `,
+    outline: `hover:outline-emerald-500/20 dark:hover:outline-emerald-400`,
     description:
       "Vue-based framework with SSR and SSG same as Nextjs but Vue-based.",
   },
@@ -60,6 +62,7 @@ export const frameworks = [
       dark:border-red-600/30 dark:hover:border-red-700/50
       dark:hover:bg-gradient-to-br dark:hover:from-red-500/10 dark:hover:to-transparent
     `,
+    outline: `hover:outline-red-500/20 dark:hover:outline-red-400`,
     description:
       "PHP Elegant backend framework with Blade, APIs, and Model, View, Controller Structure.",
   },

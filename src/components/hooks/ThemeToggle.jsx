@@ -4,7 +4,7 @@ export default function ThemeToggle() {
   const [theme, setTheme] = useDarkMode()
 
   return (
-    <button aria-label="Toggle theme" className="group flex items-center gap-x-2 mt-4 md:mt-0 border-l-2 border-transparent hover:bg-sky-500/10 hover:border-sky-300/20 dark:hover:bg-yellow-500/10 dark:hover:border-yellow-300/40 rounded-full p-0 md:px-2.5 md:py-2 transition-colors" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+    <button aria-label="Toggle theme" className="group flex items-center gap-x-2 mt-4 md:mt-0 border-l-2 border-transparent hover:bg-sky-500/10 hover:border-sky-300/20 dark:hover:bg-yellow-500/10 dark:hover:border-yellow-300/40 rounded-full p-1 md:px-2.5 md:py-2 transition-colors" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
       <div
         className="
         relative flex items-center justify-center
