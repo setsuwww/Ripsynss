@@ -79,10 +79,12 @@
 
 .apple-font {
   font-family: "DS", cursive;
-  font-size: clamp(48px, 12vw, 94px);
+  font-weight: 600;
+  font-size: clamp(52px, 12vw, 100px);
   line-height: 1;
   letter-spacing: -0.02em;
 }
+
 
 .typing-font {
   font-family: "BitcountPropSingle";

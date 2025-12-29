@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="relative z-10 bg-white/5 dark:bg-slate-800/5 backdrop-blur-xs border-t border-white/10 dark:border-slate-800/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
 
-          <div className="flex justify-center items-center space-x-2 text-slate-400 dark:text-slate-600 text-sm">
+          <div className="flex justify-center items-center space-x-2 text-slate-400 dark:text-slate-600 text-xs md:text-sm">
             <span>© {year}</span>
             <span className="font-pixel font-medium gradient-text"><span className='text-white dark:text-slate-800 mr-1'>Rifqi</span>Synyster</span>
             <span>All rights reserved.</span>
@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-6 flex justify-center">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-sky-400/50 dark:via-yellow-400/60 to-transparent" />
+            <div className="w-24 h-[0.6px] md:h-px bg-gradient-to-r from-transparent via-sky-400/50 dark:via-yellow-400/60 to-transparent" />
           </div>
         </div>
       </div>
