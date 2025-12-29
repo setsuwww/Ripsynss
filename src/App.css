@@ -22,7 +22,7 @@
 }
 @font-face {
   font-family: "DS";
-  src: url("/fonts/DancingScript-Variable.ttf") format("truetype");
+  src: url("/fonts/DancingScript-Regular.woff2") format("woff2");
   font-display: swap;
   font-weight: 100 800;
 }

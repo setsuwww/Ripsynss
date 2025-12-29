@@ -5,12 +5,12 @@ const TitleSection = ({ text, highlight, isHeading = false, description = ""}) =
     <>
       <h1 className={`mb-6
         ${isHeading
-          ? "text-5xl sm:text-6xl lg:text-7xl"
+          ? "flex flex-col space-y-2 text-5xl sm:text-6xl lg:text-7xl"
           : "text-4xl sm:text-5xl lg:text-6xl"}
         `} data-aos = "zoom-in"
       >
         <span className="apple-font shiny-text">{text} </span>
-        {highlight && <span className="font-extrabold gradient-text">{highlight}</span>}
+        {highlight && <span className="apple-font font-extrabold gradient-text">{highlight}</span>}
       </h1>
 
       {description && (
