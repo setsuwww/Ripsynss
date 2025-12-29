@@ -21,6 +21,13 @@
   display: swap;
 }
 @font-face {
+  font-family: "DS";
+  src: url("/fonts/DancingScript-Variable.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 800;
+}
+
+@font-face {
   font-family: "Orbitron";
   src: url("/fonts/Orbitron-ExtraBold.woff2") format("woff2");
   display: swap;
@@ -68,6 +75,13 @@
 
 .font-pixel {
   font-family: "Audiowide";
+}
+
+.apple-font {
+  font-family: "DS", cursive;
+  font-size: clamp(48px, 12vw, 94px);
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .typing-font {

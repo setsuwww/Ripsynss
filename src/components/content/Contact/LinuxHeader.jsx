@@ -10,7 +10,7 @@ export default function LinuxHeader() {
       customClass: { popup: "p-0 bg-transparent shadow-none"},
       html: (
         <div className="flex flex-col rounded-xl overflow-hidden bg-zinc-900 text-white border border-zinc-800 shadow-2xl dark:bg-white dark:text-zinc-900 dark:border-zinc-200">
-          <div className="flex items-center space-x-2 px-4 py-3 bg-zinc-800 border-b border-zinc-700 dark:bg-zinc-100 dark:border-zinc-200">
+          <div className="flex items-center space-x-2 px-4 py-2.5 bg-zinc-800 border-b border-zinc-700 dark:bg-zinc-100 dark:border-zinc-200">
             <button id="mac-close" className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600"/>
             <span className="w-3 h-3 rounded-full bg-gray-700/80 dark:bg-gray-300" />
             <span className="w-3 h-3 rounded-full bg-gray-700/80 dark:bg-gray-300" />

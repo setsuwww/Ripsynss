@@ -9,7 +9,7 @@ const TitleSection = ({ text, highlight, isHeading = false, description = ""}) =
           : "text-4xl sm:text-5xl lg:text-6xl"}
         `} data-aos = "zoom-in"
       >
-        <span className="shiny-text">{text} </span>
+        <span className="apple-font shiny-text">{text} </span>
         {highlight && <span className="gradient-text">{highlight}</span>}
       </h1>
 
