@@ -9,7 +9,7 @@ export default function ActionButtons() {
         <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </Motion.a>
 
-      <Motion.a href="#contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="group relative inline-block">
+      <Motion.a href="#contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="font-pixel group relative inline-block">
         <span className="pointer-events-none absolute inset-0 rounded-full shine-border p-[4px]" />
 
         <span className="relative z-10 flex items-center px-7 py-3 rounded-full font-semibold border border-violet-900 dark:border-violet-300 hover:border-violet-400 dark:hover:border-violet-500 bg-gradient-to-b from-violet-100/0 via-violet-300/10 to-violet-500/20 hover:to-violet-500/40 transition-colors">
