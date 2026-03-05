@@ -14,14 +14,14 @@ const SkillsPage = () => {
 
       <div className="w-full relative min-h-screen pt-20 pb-16">
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <header className="text-center mb-16">
             <TitleSection text="My" highlight="Skills" description="A comprehensive overview of my technical skills and expertise across different domains of web development."   />
           </header>
 
           <FrameworkGrid />
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8" data-aos="zoom-out">
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8" data-aos="zoom-out">
             {memoSkills.map((skill, index) => (
               <SkillBar
                 key={skill.name}
@@ -33,7 +33,7 @@ const SkillsPage = () => {
               />
             ))}
           </div>
-    
+
         </div>
       </div>
     </>

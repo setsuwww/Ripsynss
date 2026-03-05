@@ -1,4 +1,13 @@
-import { SiNextdotjs, SiNuxtdotjs, SiLaravel } from "react-icons/si"
+import {
+  SiNextdotjs,
+  SiNuxtdotjs,
+  SiLaravel,
+  SiMysql,
+  SiPostgresql,
+  SiMariadb,
+  SiMongodb,
+  SiDotnet
+} from "react-icons/si"
 
 export const frameworks = [
   {
@@ -42,7 +51,7 @@ export const frameworks = [
     `,
     outline: `hover:outline-emerald-500/20 dark:hover:outline-emerald-400/60`,
     description:
-      "Vue-based framework with SSR and SSG same as Nextjs but Vue-based.",
+      "Vue-based framework with SEO-Friendly same as Nextjs but Vue-based.",
   },
 
   {
@@ -64,6 +73,118 @@ export const frameworks = [
     `,
     outline: `hover:outline-red-500/20 dark:hover:outline-red-400/60`,
     description:
-      "PHP Elegant backend framework with Blade, APIs, and Model, View, Controller Structure.",
+      "PHP Elegant backend framework with Blade, APIs, and Model, View, Controller.",
+  },
+
+  {
+    Icon: SiDotnet,
+    title: "ASP.Net Core",
+    color: `
+      text-purple-400
+      dark:text-purple-500
+    `,
+    bg: `
+      bg-gradient-to-br from-purple-600/20 to-purple-800/10 border-l-2 border-purple-600
+      dark:bg-gradient-to-br dark:from-purple-600/30 dark:to-purple-500/10 dark:border-purple-600
+    `,
+    border: `
+      border-purple-500/30 hover:border-purple-500/50
+      hover:bg-gradient-to-br hover:from-purple-500/10 hover:to-transparent
+      dark:border-purple-600/40 dark:hover:border-purple-700/60
+      dark:hover:bg-gradient-to-br dark:hover:from-purple-600/20 dark:hover:to-transparent
+    `,
+    outline: `hover:outline-purple-500/30 dark:hover:outline-purple-500/60`,
+    description:
+      "Microsoft's cross-platform framework for building modern web apps with C#",
+  },
+]
+
+export const databases = [
+  {
+    Icon: SiMysql,
+    title: "MySQL",
+    color: `
+      text-cyan-400
+      dark:text-cyan-500
+    `,
+    bg: `
+      bg-gradient-to-br from-cyan-500/20 to-cyan-700/10 border-l-2 border-cyan-500
+      dark:bg-gradient-to-br dark:from-cyan-500/20 dark:to-cyan-400/10 dark:border-cyan-600
+    `,
+    border: `
+      border-cyan-500/20 hover:border-cyan-500/40
+      hover:bg-gradient-to-br hover:from-cyan-500/5 hover:to-transparent
+      dark:border-cyan-600/30 dark:hover:border-cyan-700/50
+      dark:hover:bg-gradient-to-br dark:hover:from-cyan-500/10 dark:hover:to-transparent
+    `,
+    outline: `hover:outline-cyan-500/20 dark:hover:outline-cyan-400/60`,
+    description:
+      "Popular open-source relational database management system known for reliability and performance.",
+  },
+
+  {
+    Icon: SiPostgresql,
+    title: "PostgreSQL",
+    color: `
+      text-teal-400
+      dark:text-teal-500
+    `,
+    bg: `
+      bg-gradient-to-br from-teal-500/20 to-teal-700/10 border-l-2 border-teal-500
+      dark:bg-gradient-to-br dark:from-teal-500/20 dark:to-teal-400/10 dark:border-teal-600
+    `,
+    border: `
+      border-teal-500/20 hover:border-teal-500/40
+      hover:bg-gradient-to-br hover:from-teal-500/5 hover:to-transparent
+      dark:border-teal-600/30 dark:hover:border-teal-700/50
+      dark:hover:bg-gradient-to-br dark:hover:from-teal-500/10 dark:hover:to-transparent
+    `,
+    outline: `hover:outline-teal-500/20 dark:hover:outline-teal-400/60`,
+    description:
+      "Advanced object-relational database with emphasis on extensibility and SQL compliance.",
+  },
+
+  {
+    Icon: SiMariadb,
+    title: "MariaDB",
+    color: `
+      text-amber-400
+      dark:text-amber-500
+    `,
+    bg: `
+      bg-gradient-to-br from-amber-500/20 to-amber-700/10 border-l-2 border-amber-500
+      dark:bg-gradient-to-br dark:from-amber-500/20 dark:to-amber-400/10 dark:border-amber-600
+    `,
+    border: `
+      border-amber-500/20 hover:border-amber-500/40
+      hover:bg-gradient-to-br hover:from-amber-500/5 hover:to-transparent
+      dark:border-amber-600/30 dark:hover:border-amber-700/50
+      dark:hover:bg-gradient-to-br dark:hover:from-amber-500/10 dark:hover:to-transparent
+    `,
+    outline: `hover:outline-amber-500/20 dark:hover:outline-amber-400/60`,
+    description:
+      "Community-developed fork of MySQL with enhanced features, and storage engines.",
+  },
+
+  {
+    Icon: SiMongodb,
+    title: "MongoDB",
+    color: `
+      text-green-400
+      dark:text-green-500
+    `,
+    bg: `
+      bg-gradient-to-br from-green-500/20 to-green-700/10 border-l-2 border-green-500
+      dark:bg-gradient-to-br dark:from-green-500/20 dark:to-green-400/10 dark:border-green-600
+    `,
+    border: `
+      border-green-500/20 hover:border-green-500/40
+      hover:bg-gradient-to-br hover:from-green-500/5 hover:to-transparent
+      dark:border-green-600/30 dark:hover:border-green-700/50
+      dark:hover:bg-gradient-to-br dark:hover:from-green-500/10 dark:hover:to-transparent
+    `,
+    outline: `hover:outline-green-500/20 dark:hover:outline-green-400/60`,
+    description:
+      "NoSQL document database with high performance, horizontal scaling, and flexible schema design.",
   },
 ]

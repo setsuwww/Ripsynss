@@ -5,21 +5,25 @@
   src: url("/fonts/InstrumentSans-Regular.woff2") format("woff2");
   display: swap;
 }
+
 @font-face {
   font-family: "BitcountPropSingle";
   src: url("/fonts/BitcountPropSingle-Regular.woff2") format("woff2");
   display: swap;
 }
+
 @font-face {
   font-family: "Audiowide";
   src: url("/fonts/Audiowide-Regular.woff2") format("woff2");
   display: swap;
 }
+
 @font-face {
   font-family: "Orbitron";
   src: url("/fonts/Orbitron-Regular.woff2") format("woff2");
   display: swap;
 }
+
 @font-face {
   font-family: "DS";
   src: url("/fonts/DancingScript-Regular.woff2") format("woff2");
@@ -106,13 +110,11 @@
   }
 
   .gradient-text {
-    background: linear-gradient(
-      90deg,
-      oklch(74.6% 0.16 232),
-      oklch(71.4% 0.203 305.504),
-      oklch(71.2% 0.194 13.428),
-      oklch(74.6% 0.16 232)
-    );
+    background: linear-gradient(90deg,
+        oklch(74.6% 0.16 232),
+        oklch(71.4% 0.203 305.504),
+        oklch(71.2% 0.194 13.428),
+        oklch(74.6% 0.16 232));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -121,13 +123,11 @@
   }
 
   .dark .gradient-text {
-    background: linear-gradient(
-      90deg,
-      oklch(68.1% 0.162 75.834),
-      oklch(55% 0.18 305),
-      oklch(58% 0.17 13),
-      oklch(68.1% 0.162 75.834)
-    );
+    background: linear-gradient(90deg,
+        oklch(68.1% 0.162 75.834),
+        oklch(55% 0.18 305),
+        oklch(58% 0.17 13),
+        oklch(68.1% 0.162 75.834));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -135,14 +135,15 @@
     animation: shine 5.5s linear infinite;
   }
 
+  .gradient-text:hover {
+    background-position: 100% 0;
+  }
+
   .shine-border {
-    background: linear-gradient(
-        120deg,
+    background: linear-gradient(120deg,
         transparent,
         rgba(168, 85, 247, 0.75),
-        transparent
-      )
-      repeat;
+        transparent) repeat;
     background-size: 200% 200%;
     animation: shineSweep 2s linear infinite;
 
@@ -159,13 +160,10 @@
   }
 
   .dark .shine-border {
-    background: linear-gradient(
-        120deg,
+    background: linear-gradient(120deg,
         transparent,
         rgba(196, 132, 252, 0.9),
-        transparent
-      )
-      repeat;
+        transparent) repeat;
     background-size: 200% 200%;
     animation: shineSweep 2s linear infinite;
 
@@ -183,16 +181,16 @@
     0% {
       background-position: 200% 0%;
     }
+
     100% {
       background-position: -200% 0%;
     }
+
     .dark .shiny-text {
-      background: linear-gradient(
-        90deg,
-        oklch(35% 0.02 255),
-        oklch(35% 0.05 257),
-        oklch(75% 0.02 255)
-      );
+      background: linear-gradient(90deg,
+          oklch(35% 0.02 255),
+          oklch(35% 0.05 257),
+          oklch(75% 0.02 255));
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -208,47 +206,29 @@
   }
 
   .input {
-    @apply w-full px-4 py-3 rounded-lg
-      bg-white/5 border border-white/10
-      text-white placeholder-slate-400
-      focus:ring-2 focus:ring-violet-500/10
-      focus:border focus:border-violet-500/10
-      outline-offset-2 focus:outline outline-violet-500/20
-      focus:inset-shadow-sm focus:inset-shadow-violet-600/40
-      transition-all;
+    @apply w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-400 focus:ring-2 focus:ring-violet-500/10 focus:border focus:border-violet-500/10 outline-offset-2 focus:outline outline-violet-500/20 focus:inset-shadow-sm focus:inset-shadow-violet-600/40 transition-all;
   }
 
   .dark .input {
-    @apply w-full px-4 py-3 rounded-lg
-      bg-slate-800/5 border border-slate-800/10
-      text-slate-800 placeholder-slate-600
-      focus:ring-2 focus:ring-violet-100/50
-      focus:border focus:border-violet-100/50
-      outline-none focus:outline-2 outline-violet-200/50
-      focus:inset-shadow-sm focus:inset-shadow-violet-400/60
-      transition-all;
+    @apply w-full px-4 py-3 rounded-lg bg-slate-800/5 border border-slate-800/10 text-slate-800 placeholder-slate-600 focus:ring-2 focus:ring-violet-100/50 focus:border focus:border-violet-100/50 outline-none focus:outline-2 outline-violet-200/50 focus:inset-shadow-sm focus:inset-shadow-violet-400/60 transition-all;
   }
 }
 
 .shiny-text {
-  background: linear-gradient(
-    90deg,
-    oklch(92.9% 0.013 255),
-    oklch(55.4% 0.046 257),
-    oklch(92.9% 0.013 255)
-  );
+  background: linear-gradient(90deg,
+      oklch(92.9% 0.013 255),
+      oklch(55.4% 0.046 257),
+      oklch(92.9% 0.013 255));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .dark .shiny-text {
-  background: linear-gradient(
-    90deg,
-    oklch(35% 0.02 255),
-    oklch(35% 0.05 257),
-    oklch(75% 0.02 255)
-  );
+  background: linear-gradient(90deg,
+      oklch(35% 0.02 255),
+      oklch(35% 0.05 257),
+      oklch(75% 0.02 255));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -258,6 +238,7 @@
   0% {
     background-position: 200% center;
   }
+
   100% {
     background-position: -200% center;
   }
@@ -268,6 +249,7 @@
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -279,9 +261,11 @@
     transform: rotate(var(--angle)) translateX(0);
     opacity: 1;
   }
+
   70% {
     opacity: 1;
   }
+
   100% {
     transform: rotate(var(--angle)) translateX(-600px);
     opacity: 0;
@@ -292,6 +276,7 @@
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 0 50px;
   }
@@ -301,6 +286,7 @@
   from {
     background-position: 0 0, 0 0;
   }
+
   to {
     background-position: 0 50px, 0 50px;
   }
