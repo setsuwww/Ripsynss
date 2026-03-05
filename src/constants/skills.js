@@ -65,4 +65,38 @@ export const skills = [
       dark:from-yellow-500 dark:to-yellow-700
     `,
   },
+  {
+    name: "Golang",
+    nameSingkat: "Go",
+    level: 75,
+    color: `
+      from-cyan-300 to-cyan-500
+      dark:from-cyan-400 dark:to-cyan-500
+    `,
+  },
+  {
+    name: "Flutter",
+    level: 70,
+    color: `
+      from-sky-400 to-sky-600
+      dark:from-sky-500 dark:to-sky-700
+    `,
+  },
+  {
+    name: "ASP.NET Core",
+    nameSingkat: "C#",
+    level: 85,
+    color: `
+      from-violet-400 to-violet-600
+      dark:from-violet-500 dark:to-violet-700
+    `,
+  },
+  {
+    name: "Python",
+    level: 80,
+    color: `
+      from-orange-400 to-orange-600
+      dark:from-orange-500 dark:to-orange-700
+    `,
+  },
 ]
