@@ -13,13 +13,13 @@ import {
 } from "react-icons/si"
 
 const techItems = [
-  { name: "Jest", icon: SiJest, color: "text-red-500" },
-  { name: "GitHub", icon: SiGithub, color: "text-white dark:text-zinc-800" },
-  { name: "Vercel", icon: SiVercel, color: "text-white dark:text-zinc-800" },
-  { name: "Netlify", icon: SiNetlify, color: "text-teal-500" },
-  { name: "Git", icon: SiGit, color: "text-orange-500" },
-  { name: "Firebase", icon: SiFirebase, color: "text-yellow-400" },
-  { name: "Supabase", icon: SiSupabase, color: "text-emerald-500" },
+  { name: "Jest", icon: SiJest, color: "text-red-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#ef4444]/15" },
+  { name: "GitHub", icon: SiGithub, color: "text-white dark:text-zinc-800", shadow: "group-hover:inset-shadow-[0_35px_35px_#ffffff]/15 dark:group-hover:inset-shadow-[0_35px_35px_#000000]/15" },
+  { name: "Vercel", icon: SiVercel, color: "text-white dark:text-zinc-800", shadow: "group-hover:inset-shadow-[0_35px_35px_#ffffff]/15 dark:group-hover:inset-shadow-[0_35px_35px_#000000]/15" },
+  { name: "Netlify", icon: SiNetlify, color: "text-teal-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#14b8a6]/15" },
+  { name: "Git", icon: SiGit, color: "text-orange-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#f97316]/15" },
+  { name: "Firebase", icon: SiFirebase, color: "text-yellow-400", shadow: "group-hover:inset-shadow-[0_35px_35px_#eab308]/15" },
+  { name: "Supabase", icon: SiSupabase, color: "text-emerald-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#10b981]/15" },
 ]
 
 export default function InfiniteCarousel() {
@@ -33,7 +33,7 @@ export default function InfiniteCarousel() {
 
     let animationFrame
     let scrollPosition = 0
-    const speed = 0.5
+    const speed = 1.5
 
     const scroll = () => {
       scrollPosition += speed
@@ -84,7 +84,7 @@ export default function InfiniteCarousel() {
                   hover:border-white/30 dark:hover:border-black/30
                 "
               >
-                <div className="relative w-16 h-16 mb-2 flex items-center justify-center">
+                <div className={`${item.shadow} relative w-16 h-16 mb-2 flex items-center justify-center rounded-full`}>
 
                   <Icon
                     size={40}
@@ -111,18 +111,6 @@ export default function InfiniteCarousel() {
                 >
                   {item.name}
                 </span>
-
-                <div
-                  className="
-                    absolute -top-1 -right-1
-                    w-2 h-2 rounded-full
-                    opacity-0
-                    group-hover:opacity-100
-                    transition-opacity
-                    bg-current
-                  "
-                />
-
               </div>
             )
           })}
