@@ -83,7 +83,7 @@ export default function LinuxHeader() {
           className={`${trafficBase} ${
             inactive
               ? "cursor-not-allowed bg-zinc-400/20 border-zinc-400/15"
-              : "bg-gradient-to-b from-red-700 to-red-500 border-red-700 hover:from-red-800 dark:from-red-400 dark:to-red-500 dark:border-red-400"
+              : "bg-red-400 border border-red-500 hover:bg-red-600"
           }`}
         />
 
@@ -92,7 +92,7 @@ export default function LinuxHeader() {
           className={`${trafficBase} ${
             inactive
               ? "bg-zinc-400/20 border-zinc-400/15"
-              : "bg-gradient-to-b from-yellow-700 to-yellow-500 border-yellow-700 dark:from-yellow-400 dark:to-yellow-500 dark:border-yellow-400"
+              : "bg-yellow-400 border border-yellow-500"
           }`}
         />
 
@@ -101,7 +101,7 @@ export default function LinuxHeader() {
           className={`${trafficBase} ${
             inactive
               ? "bg-zinc-400/20 border-zinc-400/15"
-              : "bg-gradient-to-b from-green-700 to-green-500 border-green-700 dark:from-green-400 dark:to-green-500 dark:border-green-400"
+              : "bg-green-400 border border-green-500"
           }`}
         />
       </div>
