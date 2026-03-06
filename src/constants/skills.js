@@ -61,17 +61,8 @@ export const skills = [
     nameSingkat: "JS",
     level: 90,
     color: `
-      from-yellow-400 to-yellow-600
-      dark:from-yellow-500 dark:to-yellow-700
-    `,
-  },
-  {
-    name: "Golang",
-    nameSingkat: "Go",
-    level: 75,
-    color: `
-      from-cyan-300 to-cyan-500
-      dark:from-cyan-400 dark:to-cyan-500
+    from-yellow-400 to-yellow-600
+    dark:from-yellow-500 dark:to-yellow-700
     `,
   },
   {
@@ -89,6 +80,15 @@ export const skills = [
     color: `
       from-violet-400 to-violet-600
       dark:from-violet-500 dark:to-violet-700
+    `,
+  },
+  {
+    name: "Golang",
+    nameSingkat: "Go",
+    level: 75,
+    color: `
+      from-cyan-300 to-cyan-500
+      dark:from-cyan-400 dark:to-cyan-500
     `,
   },
   {

@@ -108,7 +108,7 @@ export default function InfiniteCarousel() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="inline-flex gap-8 px-20 py-6">
+        <div className="inline-flex gap-8 px-20 py-6 border-2 border-dashed border-slate-600/40 dark:border-slate-400/60">
           {duplicatedItems.map((item, index) => (
             <div
               key={`${item.name}-${index}`}
@@ -117,7 +117,7 @@ export default function InfiniteCarousel() {
                 w-32 h-32 rounded-xl transition-all duration-300
                 hover:scale-105
                 bg-white/5 dark:bg-black/5
-                border border-white/10 dark:border-black/10
+                border border-white/10 dark:border-black/10 border-dashed
                 hover:border-white/30 dark:hover:border-black/30
               `}
             >
