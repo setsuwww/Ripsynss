@@ -33,7 +33,7 @@ export default function InfiniteCarousel() {
 
     let animationFrame
     let scrollPosition = 0
-    const speed = 1.5
+    const speed = 1
 
     const scroll = () => {
       scrollPosition += speed
