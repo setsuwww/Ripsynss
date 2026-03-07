@@ -33,8 +33,8 @@ export default function ThemeToggle() {
         />
       </div>
 
-      {theme === "dark" 
-        ? (<span className="text-yellow-600">Light mode</span>) 
+      {theme === "dark"
+        ? (<span className="text-yellow-600">Light mode</span>)
         : (<span className="text-sky-400">Dark mode</span>)
       }
     </button>

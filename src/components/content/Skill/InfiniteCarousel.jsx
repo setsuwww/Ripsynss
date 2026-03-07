@@ -61,10 +61,10 @@ export default function InfiniteCarousel() {
     <div className="w-full relative py-20 bg-black dark:bg-white overflow-hidden">
 
       {/* gradient kiri */}
-      <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none bg-gradient-to-r from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
+      <div className="absolute left-0 top-0 bottom-0 w-30 z-10 pointer-events-none bg-gradient-to-r from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
 
       {/* gradient kanan */}
-      <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none bg-gradient-to-l from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
+      <div className="absolute right-0 top-0 bottom-0 w-30 z-10 pointer-events-none bg-gradient-to-l from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
 
       <div
         ref={scrollRef}
