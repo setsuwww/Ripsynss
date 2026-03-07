@@ -61,16 +61,16 @@ export default function InfiniteCarousel() {
     <div className="w-full relative py-20 bg-black dark:bg-white overflow-hidden">
 
       {/* gradient kiri */}
-      <div className="absolute left-0 top-0 bottom-0 w-40 z-10 pointer-events-none bg-gradient-to-r from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
+      <div className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none bg-gradient-to-r from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
 
       {/* gradient kanan */}
-      <div className="absolute right-0 top-0 bottom-0 w-40 z-10 pointer-events-none bg-gradient-to-l from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
+      <div className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none bg-gradient-to-l from-black via-black/90 to-transparent dark:from-white dark:via-white/90 dark:to-transparent" />
 
       <div
         ref={scrollRef}
         className="overflow-x-hidden select-none"
       >
-        <div className="inline-flex gap-8 px-20 py-6 border-2 border-dashed border-zinc-600/40 dark:border-zinc-400/60">
+        <div className="inline-flex gap-4 lg:gap-8 px-20 py-6 border-2 border-dashed border-zinc-600/40 dark:border-zinc-400/60">
 
           {duplicatedItems.map((item, index) => {
             const Icon = item.icon
@@ -80,7 +80,7 @@ export default function InfiniteCarousel() {
                 key={`${item.name}-${index}`}
                 className="
                   group relative flex flex-col items-center justify-center
-                  lg:w-32 lg:h-32 w-16 h-16 rounded-xl
+                  lg:w-32 lg:h-32 w-18 h-18 rounded-xl
                   transition-all duration-300
                   hover:scale-105
                   bg-zinc-950 dark:bg-zinc-50
@@ -88,7 +88,7 @@ export default function InfiniteCarousel() {
                   hover:border-white/30 dark:hover:border-black/30
                 "
               >
-                <div className={`${item.shadow} border border-zinc-500/50 relative lg:w-16 lg:h-16 w-6 h-6 mb-2 flex items-center justify-center rounded-full transition-all duration-300 ease-linear`}>
+                <div className={`${item.shadow} border border-zinc-500/50 relative lg:w-16 lg:h-16 w-8 h-8 mb-2 flex items-center justify-center rounded-full transition-all duration-300 ease-linear`}>
 
                   <Icon
                     className={`lg:w-10 lg:h-10 w-5 h-5
