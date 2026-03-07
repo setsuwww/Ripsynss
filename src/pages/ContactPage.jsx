@@ -106,7 +106,6 @@ const ContactPage = () => {
                   </form>
                 </div>
               </div>
-
             </div>
           </section>
         </div>
