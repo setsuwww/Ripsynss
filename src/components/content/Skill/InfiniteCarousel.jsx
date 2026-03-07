@@ -68,7 +68,7 @@ export default function InfiniteCarousel() {
 
       <div
         ref={scrollRef}
-        className="overflow-x-hidden select-none"
+        className="overflow-x-hidden select-none border border-slate-500/30 py-10 rounded-full"
       >
         <div className="inline-flex gap-4 lg:gap-8 px-20 py-6 border-2 border-dashed border-zinc-600/40 dark:border-zinc-400/60">
 
