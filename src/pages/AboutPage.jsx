@@ -49,7 +49,7 @@ const AboutPage = () => {
                       <p className="text-slate-600 dark:text-slate-400 mt-2 mb-2 text-xs md:sm">
                         {exp.period}
                       </p>
-                      <p className="text-slate-300 dark:text-slate-600 text-xs md:text-sm">
+                      <p className="max-w-xs text-slate-300 dark:text-slate-600 text-xs md:text-sm">
                         {exp.description}
                       </p>
                     </article>

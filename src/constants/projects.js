@@ -1,41 +1,41 @@
 export const projects = [
   {
     id: 1,
-    title: "Vuetyfull",
+    title: "Virspeed",
     description:
-      "This is my Simple Content Management System Web app, was made with Vuejs & Vite for high SPA & PWA Performance.",
+      "This is my biggest intern-project for information-system-shift-management use Nextjs as a main fullstack framework",
     image: "/vuetyfull.webp",
-    technologies: ["MySQL", "Vuejs", "Vite", "Tailwindcss"],
+    technologies: ["Nextjs", "Tailwindcss", "PostgreSQL",],
   },
   {
     id: 2,
-    title: "Nexttask",
+    title: "MTPM-Web",
     description:
-    "This is my first Nextjs Todolist app for Client Project & Request, i was use Nextjs for Performance and smooth DX.",
+    "Multi-Tenant Project Management SaaS Web-based use Nextjs, Go with go-ekosystem, dan PostgreSQL Cloud (Neon)",
     image: "/Nexttask.webp",
-    technologies: ["MySQL", "Nextjs", "Tailwindcss"],
+    technologies: ["Nextjs", "Tailwindcss", "Golang", "PostgreSQL"],
   },
   {
     id: 3,
-    title: "Companies Management",
+    title: "FNFM-Areact",
     description:
-      "This is a My Biggest Project for Companies, i was use Laravel for Fullstack, Complex, and Enterprise App.",
+      "Folder & File management using Vite React for Frontend, + ASP.NET Microsoft with CSharp(C#/CS) as MVC Backend",
     image: "/CM3.webp",
-    technologies: ["MySQL", "Laravel", "Tailwindcss"],
+    technologies: ["Vite", "React", "Tailwindcss", "ASP.Net", "Postgresql"],
   },
   {
     id: 4,
-    title: "Flashcashier",
+    title: "Nexttask",
     description:
-      "This is a My second Nextjs Project for Client, to many function re-rendered is make UX Slow, so i Use Nextjs for State Management.",
+      "Multi-Todolist App use Nextjs typescript, Shadcn Tailwindcss, Zustand, Prisma and MySQL as Database",
     image: "/flashcashier.webp",
-    technologies: ["MySQL", "Nextjs", "Tailwindcss"],
+    technologies: ["Nextjs", "Tailwindcss", "MongoDB"],
   },
   {
     id: 5,
-    title: "Liveon",
+    title: "MR:Space",
     description:
-      "This is my seccond Biggest Project using Nextjs for SEO, SSR & CSR Perform, React Typescript for specific error and safety typing",
+      "This is my seccond Biggest Project using Laravel inertia React-kit and tailwindcss",
     image: "/lintasarta.webp",
     technologies: ["MySQL", "Nextjs", "Tailwindcss"],
   },

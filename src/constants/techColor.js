@@ -24,6 +24,11 @@ export const techColors = {
     dark:from-orange-500/10 dark:to-orange-600/10 dark:border-orange-600/20 dark:text-orange-700
   `,
 
+  PostgreSQL: `
+    from-cyan-500/10 to-cyan-600/10 border-cyan-400/20 text-cyan-300
+    dark:from-cyan-500/10 dark:to-cyan-600/10 dark:border-cyan-600/20 dark:text-orange-700
+  `,
+
   Laravel: `
     from-red-500/10 to-red-600/10 border-red-400/20 text-red-300
     dark:from-red-500/10 dark:to-red-600/10 dark:border-red-600/20 dark:text-red-700
