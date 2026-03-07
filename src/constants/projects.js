@@ -21,7 +21,7 @@ export const projects = [
     description:
       "Folder & File management using Vite React for Frontend, + ASP.NET Microsoft with CSharp(C#/CS) as MVC Backend",
     image: "/CM3.webp",
-    technologies: ["Vite", "React", "Tailwindcss", "ASP.Net", "Postgresql"],
+    technologies: ["Vite", "React", "Tailwindcss", "ASP.Net", "PostgreSQL"],
   },
   {
     id: 4,
@@ -37,14 +37,14 @@ export const projects = [
     description:
       "This is my seccond Biggest Project using Laravel inertia React-kit and tailwindcss",
     image: "/lintasarta.webp",
-    technologies: ["MySQL", "Nextjs", "Tailwindcss"],
+    technologies: ["Laravel", "Inertia", "React", "Tailwindcss", "MariaDB"],
   },
   {
     id: 6,
-    title: "Artyphoria Companies",
+    title: "To-do-Craft",
     description:
-      "Artyphoria, This project contains company profiles from my team only, cause this web just focused on UX & Performane so i use Nextjs for SSR, SEO Friendly",
+      "To-do-craft, Todolist dashboard using Svelte javascript and Python Flask with MVC Structure",
     image: "/artyphoria.webp",
-    technologies: ["Nextjs", "Tailwindcss"],
+    technologies: ["Svelte", "Tailwindcss", "Flask", "Python", "SQLite"],
   },
 ]
