@@ -16,7 +16,7 @@ export default function Navigation() {
       <nav
         className={clsx(
           "fixed z-50 left-1/2 -translate-x-1/2 transition-all",
-          scrolled ? "glass glass-strength-40 glass-blur-8 glass-chromatic-40 top-4 rounded-3xl border-b border-gray-400/20 inset-shadow-sm inset-shadow-gray-400/60" : "top-6"
+          scrolled ? "glass glass-strength-40 glass-blur-8 glass-chromatic-20 top-4 rounded-3xl border-b border-gray-400/15 inset-shadow-sm inset-shadow-gray-400/40" : "top-6"
         )}
       >
         <div className={clsx(
