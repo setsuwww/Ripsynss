@@ -12,7 +12,7 @@ export const projects = [
     title: "MTPM-Web",
     description:
     "Multi-Tenant Project Management SaaS Web-based use Nextjs, Go with go-ekosystem, dan PostgreSQL Cloud (Neon)",
-    image: "/Nexttask.webp",
+    image: "/projects/mtpmsaas.png",
     technologies: ["Nextjs", "Tailwindcss", "Golang", "PostgreSQL"],
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     title: "FNFM-Areact",
     description:
       "Folder & File management using Vite React for Frontend, + ASP.NET Microsoft with CSharp(C#/CS) as MVC Backend",
-    image: "/CM3.webp",
+    image: "/projects/areact.png",
     technologies: ["Vite", "React", "Tailwindcss", "ASP.Net", "PostgreSQL"],
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     title: "Nexttask",
     description:
       "Multi-Todolist App use Nextjs typescript, Shadcn Tailwindcss, Zustand, Prisma and MySQL as Database",
-    image: "/flashcashier.webp",
+    image: "/projects/nexttask.png",
     technologies: ["Nextjs", "Tailwindcss", "MongoDB"],
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     title: "MR:Space",
     description:
       "This is my seccond Biggest Project using Laravel inertia React-kit and tailwindcss",
-    image: "/lintasarta.webp",
+    image: "/projects/mrspace.png",
     technologies: ["Laravel", "Inertia", "React", "Tailwindcss", "MariaDB"],
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     title: "To-do-Craft",
     description:
       "To-do-craft, Todolist dashboard using Svelte javascript and Python Flask with MVC Structure",
-    image: "/artyphoria.webp",
+    image: "/projects/todocraft.png",
     technologies: ["Svelte", "Tailwindcss", "Flask", "Python", "SQLite"],
   },
 ]
