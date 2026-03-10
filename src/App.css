@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-glass";
 
 @font-face {
   font-family: "InstrumentSans";
