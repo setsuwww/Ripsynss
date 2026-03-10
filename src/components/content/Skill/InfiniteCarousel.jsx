@@ -1,51 +1,12 @@
 "use client"
 
-import { MyAWS, MyAzure } from "@/components/svg/MyIcon"
+import { techDev } from "@/constants/techDev"
 import React, { useEffect, useRef } from "react"
-
-import { SiJest, SiVercel, SiNetlify, SiGithub, SiGit, SiFirebase, SiSupabase } from "react-icons/si"
-
-const containerVariants = {
-  hidden: { opacity: 0, y: 40 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      staggerChildren: 0.08
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: { opacity: 0, scale: 0.8, y: 20 },
-  show: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: {
-      duration: 0.4,
-      ease: "easeOut"
-    }
-  }
-}
-
-const techItems = [
-  { name: "Jest", icon: SiJest, color: "text-red-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#ef4444]/15 group-hover:border-red-500/50" },
-  { name: "GitHub", icon: SiGithub, color: "text-white dark:text-zinc-800", shadow: "group-hover:inset-shadow-[0_35px_35px_#ffffff]/15 dark:group-hover:inset-shadow-[0_35px_35px_#000000]/15 group-hover:border-white/50 dark:group-hover:border-zinc-500/50" },
-  { name: "Vercel", icon: SiVercel, color: "text-white dark:text-zinc-800", shadow: "group-hover:inset-shadow-[0_35px_35px_#ffffff]/15 dark:group-hover:inset-shadow-[0_35px_35px_#000000]/15 group-hover:border-white/50 dark:group-hover:border-zinc-500/50" },
-  { name: "Netlify", icon: SiNetlify, color: "text-teal-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#14b8a6]/15 group-hover:border-teal-500/50" },
-  { name: "Git", icon: SiGit, color: "text-orange-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#f97316]/15 group-hover:border-orange-500/50" },
-  { name: "Firebase", icon: SiFirebase, color: "text-yellow-400", shadow: "group-hover:inset-shadow-[0_35px_35px_#eab308]/15 group-hover:border-yellow-500/50" },
-  { name: "Supabase", icon: SiSupabase, color: "text-emerald-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#10b981]/15 group-hover:border-emerald-500/50" },
-  { name: "Azure", icon: MyAzure, color: "text-blue-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#3b82f6]/15 group-hover:border-blue-500/50" },
-  { name: "AWS", icon: MyAWS, color: "text-orange-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#f97316]/15 group-hover:border-orange-500/50" },
-]
 
 export default function InfiniteCarousel() {
   const scrollRef = useRef(null)
 
-  const duplicatedItems = [...techItems, ...techItems, ...techItems]
+  const duplicatedItems = [...techDev, ...techDev, ...techDev]
 
   useEffect(() => {
     const scrollElement = scrollRef.current
@@ -84,9 +45,9 @@ export default function InfiniteCarousel() {
 
       <div
         ref={scrollRef}
-        className="overflow-x-hidden select-none border border-slate-500/30 py-10"
+        className="overflow-x-hidden select-none border border-slate-500/30 py-8 lg:py-10"
       >
-        <div className="inline-flex gap-4 lg:gap-8 px-20 py-6 border-2 border-dashed border-zinc-600/40 dark:border-zinc-400/60">
+        <div className="inline-flex gap-4 lg:gap-8 px-20 py-4 lg:py-6 border-2 border-dashed border-zinc-600/40 dark:border-zinc-400/60">
 
           {duplicatedItems.map((item, index) => {
             const Icon = item.icon
@@ -120,7 +81,7 @@ export default function InfiniteCarousel() {
                 </div>
 
                 <span
-                  className="
+                  className="font-pixel
                     text-xs lg:text-sm font-medium
                     text-gray-500
                     group-hover:text-white

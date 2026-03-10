@@ -75,7 +75,7 @@ export default function LinuxHeader() {
   };
 
   return (
-    <div className="flex items-center justify-between rounded-t-sm border-b border-white/10 bg-white/5 px-4 py-2 md:px-5 md:py-1.5 dark:border-zinc-200 dark:bg-gray-400/10">
+    <div className="flex items-center justify-between rounded-t-2xl border-b border-white/10 bg-white/5 px-4 py-2 md:px-5 md:py-1.5 dark:border-zinc-200 dark:bg-gray-400/10">
       <div className="flex items-center space-x-2">
         {/* RED */}
         <button
