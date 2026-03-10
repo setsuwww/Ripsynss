@@ -14,7 +14,7 @@ export default function ActionButtons() {
 
         <span className="relative z-10 flex items-center px-7 py-3 rounded-full font-semibold border border-violet-900 dark:border-violet-300 hover:border-violet-400 dark:hover:border-violet-500 bg-gradient-to-b from-violet-100/0 via-violet-300/10 to-violet-500/20 hover:to-violet-500/40 transition-colors">
           <Mail className="mr-2 w-5 h-5 text-violet-300 dark:text-fuchsia-700 transition-all group-hover:scale-110" />
-          <span className="bg-clip-text text-transparent bg-gradient-to-l from-violet-600 dark:form-violet-200 to-fuchsia-200 dark:to-fuchsia-600">Get In Touch</span> 
+          <span className="bg-clip-text text-transparent bg-gradient-to-l from-violet-600 dark:form-violet-200 to-fuchsia-200 dark:to-fuchsia-600">Get In Touch</span>
         </span>
       </Motion.a>
     </Motion.div>

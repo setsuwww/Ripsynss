@@ -1,18 +1,34 @@
 "use client"
 
-import MyAzure from "@/components/svg/MyAzure"
-import MyAWS from "@/components/svg/MyAWS"
+import { MyAWS, MyAzure } from "@/components/svg/MyIcon"
 import React, { useEffect, useRef } from "react"
 
-import {
-  SiJest,
-  SiVercel,
-  SiNetlify,
-  SiGithub,
-  SiGit,
-  SiFirebase,
-  SiSupabase
-} from "react-icons/si"
+import { SiJest, SiVercel, SiNetlify, SiGithub, SiGit, SiFirebase, SiSupabase } from "react-icons/si"
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      staggerChildren: 0.08
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 20 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut"
+    }
+  }
+}
 
 const techItems = [
   { name: "Jest", icon: SiJest, color: "text-red-500", shadow: "group-hover:inset-shadow-[0_35px_35px_#ef4444]/15 group-hover:border-red-500/50" },
@@ -68,7 +84,7 @@ export default function InfiniteCarousel() {
 
       <div
         ref={scrollRef}
-        className="overflow-x-hidden select-none border border-slate-500/30 py-10 rounded-full"
+        className="overflow-x-hidden select-none border border-slate-500/30 py-10"
       >
         <div className="inline-flex gap-4 lg:gap-8 px-20 py-6 border-2 border-dashed border-zinc-600/40 dark:border-zinc-400/60">
 
@@ -82,7 +98,7 @@ export default function InfiniteCarousel() {
                   group relative flex flex-col items-center justify-center
                   lg:w-32 lg:h-32 w-18 h-18 rounded-xl
                   transition-all duration-300
-                  hover:scale-105
+                  hover:scale-105 hover:-translate-y-2
                   bg-zinc-950 dark:bg-zinc-50
                   border border-white/10 dark:border-black/10 border-dashed
                   hover:border-white/30 dark:hover:border-black/30
