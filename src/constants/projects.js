@@ -4,7 +4,7 @@ export const projects = [
     title: "Virspeed",
     description:
       "This is my biggest intern-project for information-system-shift-management use Nextjs as a main fullstack framework",
-    image: "/projects/virspeed.png",
+    image: "/projects/virspeed.avif",
     technologies: ["Nextjs", "Tailwindcss", "PostgreSQL",],
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     title: "MTPM-Web",
     description:
     "Multi-Tenant Project Management SaaS Web-based use Nextjs, Go with go-ecosystem, dan PostgreSQL Cloud (Neon)",
-    image: "/projects/mtpmsaas.png",
+    image: "/projects/mtpmsaas.avif",
     technologies: ["Nextjs", "Tailwindcss", "Golang", "PostgreSQL"],
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     title: "FNFM-Areact",
     description:
       "Folder & File management using Vite React for Frontend, + ASP.NET Microsoft with CSharp(C#/CS) as MVC Backend",
-    image: "/projects/areact.png",
+    image: "/projects/areact.avif",
     technologies: ["Vite", "React", "Tailwindcss", "ASP.Net", "PostgreSQL"],
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     title: "Nexttask",
     description:
       "Multi-Todolist App use Nextjs typescript, Shadcn Tailwindcss, Zustand, Prisma and MySQL as Database",
-    image: "/projects/nexttask.png",
+    image: "/projects/nexttask.avif",
     technologies: ["Nextjs", "Tailwindcss", "MongoDB"],
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     title: "MR:Space",
     description:
       "This is my seccond Biggest Project using Laravel inertia React-kit and tailwindcss",
-    image: "/projects/mrspace.png",
+    image: "/projects/mrspace.avif",
     technologies: ["Laravel", "Inertia", "React", "Tailwindcss", "MariaDB"],
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     title: "To-do-Craft",
     description:
       "To-do-craft, Todolist dashboard using Svelte javascript and Python Flask with MVC Structure",
-    image: "/projects/todocraft.png",
+    image: "/projects/todocraft.avif",
     technologies: ["Svelte", "Tailwindcss", "Flask", "Python", "SQLite"],
   },
 ]

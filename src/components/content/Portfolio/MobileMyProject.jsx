@@ -1,35 +1,81 @@
-import React from "react";
-import { techColors } from "../../../constants/techColor";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import React from "react"
+import { techColors } from "../../../constants/techColor"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import "react-lazy-load-image-component/src/effects/blur.css"
 
 const CarouselCard = React.memo(function CarouselCard({ project, onClick }) {
+
+  const imageSrc = project.image || "/placeholder.webp"
+
   return (
     <div className="w-full flex-shrink-0 px-4">
       <div className="bg-white/10 dark:bg-slate-800/10 border border-white/10 dark:border-slate-800/10 rounded-2xl overflow-hidden">
-        <picture className="relative overflow-hidden cursor-pointer" onClick={onClick}>
-          <LazyLoadImage loading="lazy" effect="blur"
-            src={project.image || "/placeholder.svg"} alt={project.title}
-            className="w-full h-48 object-cover transition-transform duration-300"
+
+        <picture
+          className="relative overflow-hidden cursor-pointer"
+          onClick={onClick}
+        >
+
+          <LazyLoadImage
+            src={imageSrc}
+            alt={project.title}
+
+            loading="lazy"
+            decoding="async"
+
+            effect="blur"
+            threshold={200}
+            visibleByDefault={false}
+
+            width="100%"
+            height="192"
+
+            placeholderSrc="/placeholder.webp"
+
+            className="
+              w-full h-48 object-cover
+              transition-transform duration-300
+              will-change-transform
+            "
           />
+
           <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent" />
+
         </picture>
+
         <div className="p-6">
-          <h3 className="text-base md:text-lg font-bold text-white dark:text-slate-800 mb-3">{project.title}</h3>
-          <p className="text-slate-400 dark:text-slate-600 mb-6 text-xs md:text-sm leading-relaxed">{project.description}</p>
+
+          <h3 className="text-base md:text-lg font-bold text-white dark:text-slate-800 mb-3">
+            {project.title}
+          </h3>
+
+          <p className="text-slate-400 dark:text-slate-600 mb-6 text-xs md:text-sm leading-relaxed">
+            {project.description}
+          </p>
+
           <div className="space-y-3">
-            <h4 className="text-xs font-semibold text-slate-300 dark:text-slate-500 uppercase tracking-wider">Built with</h4>
+
+            <h4 className="text-xs font-semibold text-slate-300 dark:text-slate-500 uppercase tracking-wider">
+              Built with
+            </h4>
+
             <div className="flex flex-wrap gap-2">
+
               {project.technologies.map((tech, i) => (
-                <div key={i} className={`px-3 py-1.5 text-xs font-medium rounded-full border ${
-                    techColors[tech] || "from-white/10 to-white/20 border-white/20 text-white"
+                <div
+                  key={i}
+                  className={`px-3 py-1.5 text-xs font-medium rounded-full border ${
+                    techColors[tech] ||
+                    "from-white/10 to-white/20 border-white/20 text-white"
                   } bg-gradient-to-r`}
                 >
                   <span>{tech}</span>
                 </div>
               ))}
+
             </div>
           </div>
+
         </div>
       </div>
     </div>

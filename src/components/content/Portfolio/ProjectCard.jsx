@@ -12,8 +12,14 @@ const ProjectCard = React.memo(function ProjectCard({ project, index, onClick })
     >
       <div className="relative overflow-hidden cursor-pointer p-2 rounded-2xl flex justify-center" onClick={() => onClick(index)}>
         <LazyLoadImage
-          src={project.image || "/placeholder.webp"} alt={project.title}
-          effect="blur" loading="lazy"
+          src={project.image}
+          srcSet={`
+            ${project.image}?w=400 400w,
+            ${project.image}?w=800 800w,
+            ${project.image}?w=1200 1200w
+          `}
+          sizes="(max-width:768px) 100vw, 350px"
+          effect="blur" decoding="async" loading="lazy"
           className="w-[350px] h-48 object-cover pt-3 p-2 rounded-2xl"
         />
       </div>
