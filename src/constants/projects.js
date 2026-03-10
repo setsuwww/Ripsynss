@@ -4,7 +4,7 @@ export const projects = [
     title: "Virspeed",
     description:
       "This is my biggest intern-project for information-system-shift-management use Nextjs as a main fullstack framework",
-    image: "/vuetyfull.webp",
+    image: "/projects/virspeed.png",
     technologies: ["Nextjs", "Tailwindcss", "PostgreSQL",],
   },
   {
