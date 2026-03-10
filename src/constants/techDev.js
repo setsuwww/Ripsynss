@@ -18,14 +18,14 @@ export const techDev = [
   },
   {
     name: "Vercel",
-    description: "Cloud platform for deploying web apps.",
+    description: "Cloud platform for deploying webs.",
     icon: SiVercel,
     color: "text-white dark:text-zinc-800",
     shadow: "group-hover:inset-shadow-[0_35px_35px_#ffffff]/15 dark:group-hover:inset-shadow-[0_35px_35px_#000000]/15 group-hover:border-white/50 dark:group-hover:border-zinc-500/50"
   },
   {
     name: "Netlify",
-    description: "Platform for deploying static sites.",
+    description: "Static sites deploying platfrom.",
     icon: SiNetlify,
     color: "text-teal-500",
     shadow: "group-hover:inset-shadow-[0_35px_35px_#14b8a6]/15 group-hover:border-teal-500/50"

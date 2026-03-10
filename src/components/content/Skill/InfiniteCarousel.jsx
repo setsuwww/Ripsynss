@@ -107,8 +107,8 @@ export default function InfiniteCarousel() {
                           flex text-center
                           text-xs font-medium max-w-xs
                           text-gray-400
-                          group-hover:text-white
-                          dark:group-hover:text-black
+                          group-hover:text-gray-400
+                          dark:group-hover:text-gray-600
                           transition-colors px-2 pt-1
                         "
                       >
