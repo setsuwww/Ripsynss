@@ -11,7 +11,7 @@ export const projects = [
     id: 2,
     title: "MTPM-Web",
     description:
-    "Multi-Tenant Project Management SaaS Web-based use Nextjs, Go with go-ekosystem, dan PostgreSQL Cloud (Neon)",
+    "Multi-Tenant Project Management SaaS Web-based use Nextjs, Go with go-ecosystem, dan PostgreSQL Cloud (Neon)",
     image: "/projects/mtpmsaas.png",
     technologies: ["Nextjs", "Tailwindcss", "Golang", "PostgreSQL"],
   },
